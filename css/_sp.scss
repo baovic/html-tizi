@@ -4,6 +4,10 @@
 	.tizi-content .tizi-main .tizi-bg-list ul li:nth-child(14) {
 		margin-right: 1%;
 	}
+	.tizi_gyhm li,
+	.tizi_gycb li {
+		width: 31.8%;
+	}
 }
 @media screen and (max-width: 1293px) {
 	.tizi-content .tizi-main .tizi-bg-list ul li,
@@ -178,7 +182,7 @@
 	        li {
 	            margin: 0 0 4px 0 !important;
 	            max-width: 264px;
-	            width: 49%;
+	            width: 31.8%;
 	           	a img {
 	           		height: auto;
 	           	}
@@ -234,6 +238,10 @@
 	    float: none;
 	    display: block;
 	    margin: 0 auto;
+	    width: 96%;
+	    img {
+	    	max-width: 272px;
+	    }
 	}
 	.tizi-content .tizi-content__main {
 	    float: none;
@@ -241,7 +249,7 @@
 	    width: 100%;
 	}
 	.tizi-content .tizi-content__main .tizi-search {
-		width: 90%;
+		width: 96%;
 		margin-top: 20px;
 	}
 	.tizi-content .tizi-content__main .tizi-search form .input {
@@ -266,6 +274,10 @@
 	    margin-left: 0;
 	    width: 100%;
 	}
+	.tizi-content .tizi-content__main .tizi-content__main--left {
+		float: none;
+		width: 100%;
+	}
 	.tizi-content .tizi-content__main .tizi-content__main--left .list-tab li {
 		display: inline-block;
 	    width: 31%;
@@ -282,6 +294,19 @@
 	}
 	.tizi-content .xhtk--page {
 		background: #fff;
+	}
+	.tizi-content .tizi-content__main .tizi-content__right {
+	    float: none;
+	    width: 100%;
+	    display: block;
+	    margin-top: 20px;
+	}
+	.tizi-content .tizi-content__main .tizi-content__right .list-tab li {
+		max-width: 100%;
+	}
+	.tizi-content .tizi-content__main .tizi-content__right .tizi_gyhm--right li {
+		float: none;
+		display: inline-block;
 	}
 /*end media*/
 }
@@ -359,6 +384,9 @@
 			}
 		}
 	}
+	.tizi_gyhm li{
+            width: 49%;  	
+    }
 /*end media*/
 }
 @media screen and (max-width: 407px) {
