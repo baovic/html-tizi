@@ -63,7 +63,7 @@
                     margin-right: 18px;
                     a {
                         font-size: 15px;
-                        font-family: "UTMAvo";
+                        font-family: "UTMAvo", Fallback, sans-serif;
                         color: #fff;
                         @include transition;
                         &:hover {
@@ -86,7 +86,7 @@
                     background: #f69a04;
                     @include border-radius(10px);
                     padding: 3px 20px 6px 20px;
-                    font-family: "UTMAvo";
+                    font-family: "UTMAvo", Fallback, sans-serif;
                     color: #fff;
                     font-size: 20px;
                     font-weight: bold;
@@ -206,7 +206,7 @@
                     background-color: #31363d;
                     color: #fff;
                     font-size: 21px;
-                    font-family: "UTMAvo";
+                    font-family: "UTMAvo", Fallback, sans-serif;
                     text-align: center;
                     padding: 14px 0 0 0;
                     float: left;
@@ -261,7 +261,7 @@
                         span {
                             font-size: 13.7px;
                             color: #000;
-                            font-family: "UTMAvo";
+                            font-family: "UTMAvo", Fallback, sans-serif;
                             display: inline-block;
                             text-align: center;
                             font-weight: 400;

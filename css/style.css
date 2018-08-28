@@ -1,7 +1,7 @@
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, thead {
   border: 0 none;
   font-size: 100%;
-  font-family: "UTMAvo";
+  font-family: "UTMAvo", Fallback, sans-serif;
   margin: 0;
   outline: 0 none;
   padding: 0; }
@@ -35,12 +35,13 @@ a {
 
 @font-face {
   font-family: 'UTMAvo';
-  font-style: normal;
   font-weight: 400;
-  src: url("../fonts/utm-avo.ttf") format("truetype"); }
+  src: url("../fonts/utmavo.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/utmavo.eot?#iefix") format("embedded-opentype"), url("../fonts/utmavo.woff") format("woff"), url("../fonts/utmavo.ttf") format("truetype"); }
 body {
   color: #555555;
-  font-family: "UTMAvo";
+  font-family: "UTMAvo", Fallback, sans-serif;
   font-size: 14px;
   position: relative; }
 
@@ -109,7 +110,7 @@ body {
           margin-right: 18px; }
           .tizi-header .tizi-header__container .tizi-header__search .navi li a {
             font-size: 15px;
-            font-family: "UTMAvo";
+            font-family: "UTMAvo", Fallback, sans-serif;
             color: #fff;
             -webkit-transition: all 0.3s;
             -moz-transition: all 0.3s;
@@ -132,7 +133,7 @@ body {
           -moz-border-radius: 10px;
           border-radius: 10px;
           padding: 3px 20px 6px 20px;
-          font-family: "UTMAvo";
+          font-family: "UTMAvo", Fallback, sans-serif;
           color: #fff;
           font-size: 20px;
           font-weight: bold;
@@ -244,7 +245,7 @@ body {
           background-color: #31363d;
           color: #fff;
           font-size: 21px;
-          font-family: "UTMAvo";
+          font-family: "UTMAvo", Fallback, sans-serif;
           text-align: center;
           padding: 14px 0 0 0;
           float: left;
@@ -291,7 +292,7 @@ body {
             .tizi-content .tizi-main .tizi-bg-list ul li a span {
               font-size: 13.7px;
               color: #000;
-              font-family: "UTMAvo";
+              font-family: "UTMAvo", Fallback, sans-serif;
               display: inline-block;
               text-align: center;
               font-weight: 400;
