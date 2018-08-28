@@ -1,0 +1,340 @@
+@media screen and (max-width: 1429px) {
+	.tizi-content .tizi-main .tizi-bg-list ul li,
+	.tizi-content .tizi-main .tizi-bg-list ul li:nth-child(7n), 
+	.tizi-content .tizi-main .tizi-bg-list ul li:nth-child(14) {
+		margin-right: 1%;
+	}
+}
+@media screen and (max-width: 1293px) {
+	.tizi-content .tizi-main .tizi-bg-list ul li,
+	.tizi-content .tizi-main .tizi-bg-list ul li:nth-child(7n), 
+	.tizi-content .tizi-main .tizi-bg-list ul li:nth-child(14) {
+		margin-right: 0.5%;
+	}
+}
+@media screen and (max-width: 768px) {
+	*{
+	    box-sizing: border-box;
+	    }
+	body {
+		background: #eaebeb;
+	} 
+	.show-pc{
+	    display:none !important;
+	    }
+	.show-sp{
+	    display:block !important;
+	    }
+	/*---header---*/
+	.tizi-header {
+	    min-width: 320px;
+	    height: auto;
+	    padding: 10px 0 0 0;
+	    .tizi-header__container {
+	        width: 100%;
+
+	        .tizi-header__logo {
+	            width: 55px;
+	        }
+	        .tizi-header__search {
+	            margin-left: 0;
+	            width: calc(100% - 170px);
+
+	            .search {
+	                @include border-radius(5px);
+	                width: 100%;
+	            }
+	        }
+	        .tizi-group-login {
+	        	width: auto;
+	        	margin-right: 5px;
+
+	            .tizi-post {
+	            	margin-top: -1px;
+	                .chat {
+	                	background: url(../images/top/sp/icon-chat.png) no-repeat center top;
+	                	background-size: 33px;
+	                    width: 40px;
+	                    height: 35px;
+	                    display: inline-block !important;
+	                }
+	                .cart {
+	                	background: url(../images/top/icon-cart.png) no-repeat center 3px;
+	                	background-size: 36px;
+	                	margin: 0;
+	                	strong {
+	                		right: 11px;
+	                	}
+	                }
+	            }
+	        }
+	    }
+	}
+	.tizi-fixed {
+		position:fixed; 
+		top:0; 
+		left:0;
+		z-index: 9999;
+		-webkit-box-shadow: 0px 4px 10px 0px rgba(87,86,87,1);
+		-moz-box-shadow: 0px 4px 10px 0px rgba(87,86,87,1);
+		box-shadow: 0px 4px 10px 0px rgba(87,86,87,1);
+	}
+	/*---container---*/
+	.tizi_container {
+	    min-width: 320px;
+	    .tizi-ad img {
+	    	width: 100%;
+	    	max-width: 100%;
+	    	margin-top: 2px;
+	    }
+	}
+	/*---content---*/
+	.tizi-content {
+		width: 100%;
+		.xhtk {
+			padding: 10px 15px 15px;
+			font-size: 20px;
+		}
+		.tizi-main {
+			width: 100%;
+			.tizi-main__list {
+				background-color: #31363d;
+				padding: 10px;
+				li {
+					box-shadow: 0 0 0 0;
+					width: 32.9%;
+					height: auto;
+					max-width: 100%;
+					&:nth-child(2) {
+                    	margin: 0;
+                	}
+                	&:hover {
+                		box-shadow: 0 0 0 0;
+                	}
+					a {
+						text-transform: uppercase;
+						img {
+							width: 100%;
+						}
+						.icon {
+							max-width: 60px;
+							width: 41%;
+							top:23px;
+							left: calc(50% - 30px);
+						}
+					}
+					p {
+						padding-top: 5px;
+						height: auto;
+					}
+					 &:last-child p {
+					 	padding-top: 17px;
+					 }
+				}
+			}
+			/**/
+			.tizi-bg-list {
+				margin-top: 0;
+				padding: 15px;
+				overflow-x:scroll;
+				overflow-y: hidden;
+				width: 100%;
+				position: relative;
+				ul {
+					width: 1024px;
+	                li {
+	                    margin-right: 12px !important;
+	                    margin-bottom: 15px;
+	                }
+	            }
+	            .next-list {
+	            	position: absolute;
+	            	right: 0;
+	            	top:42.5%;
+	            }
+			}
+		}
+	}
+	/*---page---*/
+	.tizi_container_page {
+		display: inline-block !important;
+		width: 100%;
+		height: auto;
+		.xhtk {
+			font-size: 20px;
+		}
+		.tizi_gycb {
+	        width: 100%;
+	        height: auto;
+	        background-color: #979a9f;
+        	li {
+        		padding-top: 10px;
+        		width: 32.9%;
+        	}
+        }
+	        /**/
+		.tizi_gyhm { 
+	        li {
+	            margin: 0 0 4px 0 !important;
+	            max-width: 264px;
+	            width: 49%;
+	           	a img {
+	           		height: auto;
+	           	}
+	        }
+	    }
+	}
+	/*--footer---*/
+	.tizi-footer__sp {
+		display: inline-block !important;
+		width: 100%;
+		text-align: center;
+		margin:10px auto 0 auto;
+		padding: 8px 0;
+		background: #fff;
+		-webkit-box-shadow: 0px -3px 10px 0px rgba(153,148,153,1);
+		-moz-box-shadow: 0px -3px 10px 0px rgba(153,148,153,1);
+		box-shadow: 0px -3px 10px 0px rgba(153,148,153,1);
+		ul {
+			display: block;
+			text-align: center;
+		}
+		ul li {
+			display: inline-block;
+			text-align: center;
+			margin: 0 6%;
+			a {
+				text-transform: uppercase;
+				display: block;
+				font-size: 13px;
+				color: #000;
+				background: url(../images/top/sp/icon-logo.png) no-repeat center top;
+				padding-top: 60px;
+
+			}
+			&:first-child {
+				margin-left: 0;
+			}
+			&:nth-child(2) a {
+				background: url(../images/top/sp/icon-danhmuc.png) no-repeat center top;
+			}
+			&:nth-child(3) a {
+				background: url(../images/top/sp/icon-giohang.png) no-repeat center top;
+			}
+			&:nth-child(4){
+				margin-right: 0;
+				a {
+					background: url(../images/top/sp/icon-taikhoan.png) no-repeat center top;
+				} 
+			}
+		}
+
+
+	}
+/*end media*/
+}
+@media screen and (max-width: 615px) {
+	.tizi-content {
+		.tizi-main {
+			.tizi-main__list {
+				li {
+					width: 31.9%;
+					p {
+						font-size: 16px;
+					}
+				}
+			}
+		}
+	}
+/*end media*/
+}
+@media screen and (min-width: 577px) and (max-width: 640px){
+	.tizi_container_page {
+		.tizi_gycb {
+        	li {
+        		width: 32.86%;
+        	}
+        }
+	}
+}
+@media screen and (max-width: 576px){
+	.tizi_container_page {
+		.tizi_gycb {
+        	li {
+        		width: 49%;
+        		padding-left: 0;
+        		a {
+        			font-size: 14px;
+        		}
+        	}
+        }
+	}
+}
+@media screen and (max-width: 478px){
+	.tizi-footer__sp {
+		ul li {
+			margin: 0 3%;
+		}
+	}
+}			
+@media screen and (min-width: 415px) and (max-width: 633px){
+	.tizi-content {
+		.tizi-main {
+			.tizi-main__list {
+				padding: 10px 5px;
+			}
+		}
+	}	
+}
+@media screen and (max-width: 414px) {
+	.tizi-content {
+		.tizi-main {
+			.tizi-main__list {
+				li {
+					width: 100%;
+					margin-bottom: 10px !important;
+					a {
+						.icon {
+							max-width: 85px;
+							width: 100%;
+							top: 20%;
+    						left: 38%;
+						}
+					}
+					p {
+						font-size: 21px;
+					}
+					&:last-child p {
+					 	padding-top: 0;
+					}
+				}
+			}
+		}
+	}
+/*end media*/
+}
+@media screen and (max-width: 407px) {
+	.tizi-footer__sp {
+		ul li {
+			margin: 0 1.5%;
+		}
+	}
+}
+@media screen and (max-width: 340px){
+	.tizi_container_page {
+		.tizi_gycb {
+        	li {
+        		a {
+        			font-size: 13px;
+        		}
+        	}
+        }
+	}
+}
+@media screen and (max-width: 355px) {
+	.tizi-footer__sp {
+		ul li {
+			margin: 0 0.5%;
+		}
+	}
+}

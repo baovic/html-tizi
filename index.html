@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <meta content="" name="copyright">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta content="ja" http-equiv="Content-Language">
+    <meta content="text/css" http-equiv="Content-Style-Type">
+    <meta content="text/javascript" http-equiv="Content-Script-Type">
+    <meta id="viewport" name="viewport" content="" />
+    <script>
+        if(screen.width <= 768){
+            document.getElementById("viewport").setAttribute("content", "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no");
+        }
+    </script>
+    <title>Tizi</title>
+
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="js/jquery.bxslider.css">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.bxslider').bxSlider({
+                useCSS: false
+             });
+        });
+    </script>
+
+  </head>
+<body>
+    <!-- header -->
+    <div class="tizi-header">
+        <div class="tizi-header__container">
+            <!-- logo -->
+            <div class="tizi-header__logo">
+                <ul class="show-pc">
+                    <li><a href="#"><img src="images/top/icon-search-left.jpg"></a></li>
+                    <li><a href="#"><img src="images/top/logo.png" alt=""></a></li>
+                </ul>
+                <ul class="show-sp">
+                    <li><a href="#"><img src="images/top/sp/icon-search-left.jpg"></a></li>
+                </ul>
+            </div>
+            <!-- search -->
+            <div class="tizi-header__search">
+                <form action="#" method="post">
+                        <input class="search" type="text" name="name" id="name" value="" placeholder="Tìm kiếm..." />
+                        <input class="submit show-pc" type="submit" value="" />
+                </form>
+                <ul class="navi show-pc">
+                    <li><a href="#">Bất động sản</a></li>
+                    <li><a href="#">Việc làm, tuyển sinh</a></li>
+                    <li><a href="#">Rao vặt</a></li>
+                    <li><a href="#">Xe cộ</a></li>
+                    <li><a href="#">Mẹ và bé</a></li>
+                    <li><a href="#">Điện tử - phụ kiện</a></li>
+                </ul>
+            </div>
+            <!-- login -->
+            <div class="tizi-group-login">
+                <div class="tizi-post">
+                    <a class="show-pc" href="#">Đăng tin</a>
+                    <span class="chat show-sp"></span>
+                    <span class="cart">
+                        <strong>12</strong>
+                    </span>
+                </div>
+                <ul class="show-pc">
+                    <li><a href="#">Trợ giúp</a></li>
+                    <li><a href="#">Đăng ký</a></li>
+                    <li><a href="#">Đăng nhập</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+     <!-- container -->
+    <div class="tizi_container">
+        <!-- slide -->
+        <div class="tizi-slider show-pc">
+            <ul  class="bxslider">
+                <li><a href="#"><img src="images/top/img-banner.png" alt="" class="img-banner" /></a></li>
+                <li><a href="#"><img src="images/top/img-banner.png" alt="" class="img-banner" /></a></li>
+                <li><a href="#"><img src="images/top/img-banner.png" alt="" class="img-banner" /></a></li>
+            </ul>
+        </div>
+        <a class="tizi-ad show-sp"><img src="images/top/sp/img-banner.png" alt="" class="img-banner" /></a>
+        <!-- content -->
+        <div class="tizi-content">
+            <p class="xhtk">Xu hướng tìm kiếm</p>
+            <!-- content main -->
+            <div class="tizi-main">
+                <!-- list top 3 banner -->
+                <ul class="tizi-main__list">
+                    <li><a href="">
+                        <img src="images/top/img-group-1.png" alt="">
+                        <img class="icon" src="images/top/icon-group-1.png" alt="">
+                        <p>Bất động sản<br>Nhà và Đất</p>
+                    </a></li>
+                    <li><a href="">
+                        <img src="images/top/img-group-2.png" alt="">
+                        <img class="icon" src="images/top/icon-group-2.png" alt="">
+                        <p>Việc làm &<br>Tuyển sinh</p>
+                    </a></li>
+                    <li><a href="">
+                        <img src="images/top/img-group-3.png" alt="">
+                        <img class="icon" src="images/top/icon-group-3.png" alt="">
+                        <p>Rao vặt</p>
+                    </a></li> 
+                </ul>
+                <!-- list top icon -->
+                <p class="xhtk show-sp">Tất cả danh mục</p>
+                <div class="tizi-bg-list">
+                    <ul>
+                        <li>
+                            <a href="#"><span>Bất động sản</span></a>
+                            <img src="images/top/icon-bullet-top.png">
+                        </li>
+                        <li>
+                            <a href="#"><span>Xe cộ,<br>Phụ tùng xe</span></a>
+                            <img src="images/top/icon-bullet-top.png">
+                        </li>
+                        <li>
+                            <a href="#"><span>Việc làm,<br>tuyển sinh</span></a>
+                            <img src="images/top/icon-bullet-top.png">
+                        </li>
+                        <li>
+                            <a href="#"><span>Điện tử, phụ kiện<br>Trang thiết bị</span></a>
+                            <img src="images/top/icon-bullet-top.png">
+                        </li>
+                        <li>
+                            <a href="#"><span>Điện máy,<br>Đồ gia dụng</span></a>
+                            <img src="images/top/icon-bullet-top.png">
+                        </li>
+                        <li>
+                            <a href="#"><span>Nội thất,<br>Vật dụng trang trí</span></a>
+                            <img src="images/top/icon-bullet-top.png">
+                        </li>
+                        <li>
+                            <a href="#"><span>Làm đẹp,<br>Sức khỏe</span></a>
+                            <img src="images/top/icon-bullet-top.png">
+                        </li>
+                        <li>
+                            <a href="#"><span>Thời trang,<br>Phụ kiện, trang sức</span></a>
+                            <img src="images/top/icon-bullet-top.png">
+                        </li>
+                        <li>
+                            <a href="#"><span>Công nghiệp, <br>Vật liệu xây dựng</span></a>
+                            <img src="images/top/icon-bullet-top.png">
+                        </li>
+                        <li>
+                            <a href="#"><span>Du lịch,<br>Đi xa</span></a>
+                            <img src="images/top/icon-bullet-top.png">
+                        </li>
+                        <li>
+                            <a href="#"><span>Dịch vụ,<br>Đối tác K.doanh</span></a>
+                            <img src="images/top/icon-bullet-top.png">
+                        </li>
+                        <li>
+                            <a href="#"><span>Mẹ & bé</span></a>
+                            <img src="images/top/icon-bullet-top.png">
+                        </li>
+                        <li>
+                            <a href="#"><span>Thể thao,<br>Thể hình</span></a>
+                            <img src="images/top/icon-bullet-top.png">
+                        </li>
+                        <li>
+                            <a href="#"><span>Văn phòng phẩm,<br>Qùa tặng</span></a>
+                            <img src="images/top/icon-bullet-top.png">
+                        </li>
+                        <li>
+                            <a href="#"><span>Địa điểm ăn uống,<br>Thực phẩm</span></a>
+                            <img src="images/top/icon-bullet-top.png">
+                        </li>
+                        <li>
+                            <a href="#"><span>Thú cưng,<br>Cây cảnh</span></a>
+                            <img src="images/top/icon-bullet-top.png">
+                        </li>
+                        <li>
+                            <a href="#"><span>Các loại khác</span></a>
+                            <img src="images/top/icon-bullet-top.png">
+                        </li>
+                    </ul>
+                    <<img src="images/top/sp/icon-next.png" class="next-list show-sp">
+                </div>
+            </div>
+            <!-- content aside -->
+            <div class="tizi-aside show-pc">
+                <img src="images/top/img-lee.png" alt="placeholder+image">
+                <a href="#" class="app"><img src="images/top/icon-app.jpg" alt="placeholder+image"></a>
+                <a href="#" class="app google"><img src="images/top/icon-google.jpg" alt="placeholder+image"></a>
+            </div>
+            <!-- introduce top -->
+            <p class="tizi-introduce show-pc">
+                Tizi.vn là website rao vặt đăng tin và đẩy tin miễn phí. Được quản lý và vận hành bởi Công ty TNHH đầu tư và thương mại VNCT.<br>
+                Địa chỉ: Tầng 6 - Tòa nhà Việt Á - Số 9 - Phố Duy Tân - Phường Dịch Vọng Hậu - Quận Cầu Giấy - TP. Hà Nội.<br>
+                Với giao diện thân thiện dễ sử dụng giúp khách hàng đăng bán sản phẩm của mình được nhanh hơn. Đối với những ai muốn kinh doanh qua mạng thì Tizi.vn sẽ giúp các cá nhân, cửa hàng, doanh nghiệp tiếp cận được người mua nhiều hơn.<br><br>
+                Đối với người mua các thanh công cụ trên website giúp người mua dễ dàng tìm được sản phẩm ưng ý cho riêng mình. Nếu bạn đã mua hàng thành công hãy đánh giá sản phẩm đó giúp ích cho những người khác lựa chọn được sản phẩm tốt nhất.<br><br>
+                Tizi.vn đang trong quá trình phát triển nên rất mong nhận được sự ủng hộ từ các bạn.
+            </p>
+        </div>
+    </div>
+    <!-- block show sp -->
+    <div class="tizi_container_page show-sp">
+        <p class="xhtk">Gợi ý của bạn</p>
+        <ul class="tizi_gycb">
+            <li><a>Đất nền dự án</a></li>
+            <li><a><span>Phòng trọ sinh viên</span></a></li>
+            <li><a><span>Xe máy giá cũ tốt</span></a></li>
+            <li><a><span>Việc làm mới nhất</span></a></li>
+            <li><a><span>Nội ngoại thất,<br> đồ gia dụng</span></a></li>
+            <li><a><span>Thời trang, đồ dùng cá nhân</span></a></li>
+        </ul>
+        <!--  -->
+        <p class="xhtk">Gợi ý hôm nay</p>
+        <ul class="tizi_gyhm">
+            <li><a href="#">
+                <img src="images/other_page/img-list-1.png">
+                <p>
+                    <span class="description">Tizi.vn đang trong quá trình phát triển nên rất mong nhận được sự ủng hộ từ các bạn.</span>
+                    <span class="price">22 triệu/m2</span>
+                    <span class="info">
+                        <strong class="add">Q.Sơn Trà. Đà Nẵng</strong>
+                        <strong class="date">8/4/2018</strong>
+                    </span>
+                </p>
+            </a></li>
+            <li><a href="#">
+                <img src="images/other_page/img-list-1.png">
+                <p>
+                    <span class="description">Tizi.vn đang trong quá trình phát triển nên rất mong nhận được sự ủng hộ từ các bạn.</span>
+                    <span class="price">22 triệu/m2</span>
+                    <span class="info">
+                        <strong class="add">Q.Sơn Trà. Đà Nẵng</strong>
+                        <strong class="date">8/4/2018</strong>
+                    </span>
+                </p>
+            </a></li>
+            <li><a href="#">
+                <img src="images/other_page/img-list-1.png">
+                <p>
+                    <span class="description">Tizi.vn đang trong quá trình phát triển nên rất mong nhận được sự ủng hộ từ các bạn.</span>
+                    <span class="price">22 triệu/m2</span>
+                    <span class="info">
+                        <strong class="add">Q.Sơn Trà. Đà Nẵng</strong>
+                        <strong class="date">8/4/2018</strong>
+                    </span>
+                </p>
+            </a></li>
+            <li><a href="#">
+                <img src="images/other_page/img-list-1.png">
+                <p>
+                    <span class="description">Tizi.vn đang trong quá trình phát triển nên rất mong nhận được sự ủng hộ từ các bạn.</span>
+                    <span class="price">22 triệu/m2</span>
+                    <span class="info">
+                        <strong class="add">Q.Sơn Trà. Đà Nẵng</strong>
+                        <strong class="date">8/4/2018</strong>
+                    </span>
+                </p>
+            </a></li>
+            <li><a href="#">
+                <img src="images/other_page/img-list-1.png">
+                <p>
+                    <span class="description">Tizi.vn đang trong quá trình phát triển nên rất mong nhận được sự ủng hộ từ các bạn.</span>
+                    <span class="price">22 triệu/m2</span>
+                    <span class="info">
+                        <strong class="add">Q.Sơn Trà. Đà Nẵng</strong>
+                        <strong class="date">8/4/2018</strong>
+                    </span>
+                </p>
+            </a></li>
+            <li><a href="#">
+                <img src="images/other_page/img-list-1.png">
+                <p>
+                    <span class="description">Tizi.vn đang trong quá trình phát triển nên rất mong nhận được sự ủng hộ từ các bạn.</span>
+                    <span class="price">22 triệu/m2</span>
+                    <span class="info">
+                        <strong class="add">Q.Sơn Trà. Đà Nẵng</strong>
+                        <strong class="date">8/4/2018</strong>
+                    </span>
+                </p>
+            </a></li>
+            <li><a href="#">
+                <img src="images/other_page/img-list-1.png">
+                <p>
+                    <span class="description">Tizi.vn đang trong quá trình phát triển nên rất mong nhận được sự ủng hộ từ các bạn.</span>
+                    <span class="price">22 triệu/m2</span>
+                    <span class="info">
+                        <strong class="add">Q.Sơn Trà. Đà Nẵng</strong>
+                        <strong class="date">8/4/2018</strong>
+                    </span>
+                </p>
+            </a></li>
+            <li><a href="#">
+                <img src="images/other_page/img-list-1.png">
+                <p>
+                    <span class="description">Tizi.vn đang trong quá trình phát triển nên rất mong nhận được sự ủng hộ từ các bạn.</span>
+                    <span class="price">22 triệu/m2</span>
+                    <span class="info">
+                        <strong class="add">Q.Sơn Trà. Đà Nẵng</strong>
+                        <strong class="date">8/4/2018</strong>
+                    </span>
+                </p>
+            </a></li>
+            <li><a href="#">
+                <img src="images/other_page/img-list-1.png">
+                <p>
+                    <span class="description">Tizi.vn đang trong quá trình phát triển nên rất mong nhận được sự ủng hộ từ các bạn.</span>
+                    <span class="price">22 triệu/m2</span>
+                    <span class="info">
+                        <strong class="add">Q.Sơn Trà. Đà Nẵng</strong>
+                        <strong class="date">8/4/2018</strong>
+                    </span>
+                </p>
+            </a></li>
+        </ul>
+    </div>
+    <div class="tizi-footer__sp show-sp">
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Danh mục</a></li>
+            <li><a href="#">Giỏ hàng</a></li>
+            <li><a href="#">Tài khoản</a></li>
+        </ul>
+    </div>
+    <!-- end block show sp -->
+    <!-- footer show pc-->
+    <div class="tizi-footer show-pc">
+        <div class="tizi-footer__container">
+            <!-- navi footer -->
+            <div class="tizi-footer__navi">
+                <div class="tizi-buy">
+                    <p>NẠP TIỀN VÀO TIZI</p>
+                    <ul>
+                        <li><a href="#"><img src="images/top/icon-banking.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="images/top/icon-mobile.jpg" alt=""></a></li>
+                    </ul>
+                </div>
+                <ul class="tizi_footer__menu">
+                    <li>Đăng tin trên Tizi</li>
+                    <li><a href="#">Nội quy đăng tin</a></li>
+                    <li><a href="#">Hướng dẫn đẩy tin miễn phí</a></li>
+                </ul>
+                <ul class="tizi_footer__menu">
+                    <li>Dành cho người mua</li>
+                    <li><a href="#">An toàn khi mua hàng</a></li>
+                    <li><a href="#">Mua bán an toàn</a></li>
+                </ul>
+                <ul class="tizi_footer__menu">
+                    <li>Về Tizi.vn</li>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                    <li><a href="#">Cơ chế giải quyết tranh chấp</a></li>
+                    <li><a href="#">Quy chế hoạt động</a></li>
+                    <li><a href="#">Bản quyền</a></li>
+                    <li><a href="#">Liên hệ hổ trợ</a></li>
+                </ul>
+            </div>
+            <!-- info tizi -->
+            <div class="tizi-info">
+                <div class="tizi-add">
+                    Công ty Cổ phần Đầu tư và Thương mại Tizi.<br>
+                    Văn phòng:<span> 123 Nguyễn Đức Trung - Quận Thanh Khê - TP. Đà Nẵng</span><br>
+                    Chi nhánh:<span> Tầng 6 - Tòa nhà Việt Á - Số 9 - Phố Duy Tân - P. Dịch Vọng Hậu - Q. Cầu Giấy - TP. Hà Nội</span><br>
+                    GPKD:<span> 1007615408, cấp ngày 1/1/2016</span><br>
+                    CSKH:<span> 0946.332.332 - 0965.332.332</span><br>
+                    Email:<span>Admin@tizi.vn</span>
+                </div>
+                <div class="tizi-cocial-network">
+                    <div class="tizi-link">
+                        <ul>
+                            <li><a href="#"><img src="images/top/icon-f.jpg"></a></li>
+                            <li><a href="#"><img src="images/top/icon-goog.jpg"></a></li>
+                            <li><a href="#"><img src="images/top/icon-youtub.jpg"></a></li>
+                        </ul>
+                        <span>Liên kết</span>
+                    </div>
+                    <img src="images/top/bocongthuong.png" alt="placeholder+image">
+                </div>
+            </div>
+            <p class="copyright">Tizi.vn (Copiright @ 2017)</p>
+        </div>
+    </div>
+        <script type="text/javascript">
+            $(window).scroll(function(){
+              if ($(this).scrollTop() > 0) {
+                  $('.tizi-header').addClass('tizi-fixed');
+              } else {
+                  $('.tizi-header').removeClass('tizi-fixed');
+              }
+           });
+            //$(document).on('click', '.next-list', function(){
+                //w = $(".tizi-bg-list").width() - 30;
+                //$('.tizi-bg-list ul').animate({'left': '-'+w+'px'}, 'slow');
+            //});
+        </script>
+</body>
+</html>

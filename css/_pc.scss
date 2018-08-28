@@ -1,0 +1,659 @@
+.tizi-header {
+    width: 100%;
+    min-width: 1235px;
+    height: 90px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 16px;
+    background-color: #9ac039;
+    text-align: center;
+
+    .tizi-header__container {
+        max-width: 1835px;
+        width: 100%;
+        display: inline-block;
+        .tizi-header__logo {
+            float: left;
+            width: 201px;
+            ul {
+                text-align: left;
+                li {
+                    float: left;
+                    &:first-child {
+                        margin-right:40px;
+                    }
+                }
+            }
+        }
+        .tizi-header__search {
+            float: left;
+            margin-left: 45px;
+            width: calc(100% - 568px);
+            form {
+                width: 100%;
+                display: inline-block;
+                .search {
+                    float: left;
+                    @include border-radius-left;
+                    border: none;
+                    background-color: #fff;
+                    height: 35px;
+                    width: calc(100% - 64px);
+                    padding-left: 15px;
+                    -webkit-box-shadow: 1px 0px 5px 0px rgba(130,122,130,1);
+                    -moz-box-shadow: 1px 0px 5px 0px rgba(130,122,130,1);
+                    box-shadow: 1px 0px 5px 0px rgba(130,122,130,1);
+                }
+                .submit {
+                    background:url(../images/top/icon-search.png) no-repeat center -1px;
+                    width: 48px;
+                    height: 40px;
+                    float: left;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+            .navi {
+                text-align: left;
+                display: inline-block;
+                width: 100%;
+                margin-top: 13px;
+                li {
+                    display: inline-block;
+                    margin-right: 18px;
+                    a {
+                        font-size: 15px;
+                        font-family: "UTMAvo";
+                        color: #fff;
+                        @include transition;
+                        &:hover {
+                            color:#000;
+                            @include transition;
+                        }
+                    }
+                }
+            }
+        }
+        .tizi-group-login {
+            float: right;
+            text-align: right;
+            width: 322px;
+            .tizi-post {
+                display: block;
+                margin-top: 4px;
+
+                a {
+                    background: #f69a04;
+                    @include border-radius(10px);
+                    padding: 3px 20px 6px 20px;
+                    font-family: "UTMAvo";
+                    color: #fff;
+                    font-size: 20px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    vertical-align: top;
+                    height: 26px;
+                    display: inline-block;
+                }
+                .cart {
+                    background: url(../images/top/icon-cart.png) no-repeat center top;
+                    width: 48px;
+                    height: 41px;
+                    display: inline-block;
+                    position: relative;
+                    margin: -9px 0 0 21px;
+                    strong {
+                        position: absolute;
+                        color:#fff;
+                        font-size: 12px;
+                        right: 8px;
+                        top: 2px;
+                    }
+                }
+            }
+            ul {
+                text-align: right;
+                margin-top: 12px;
+                li {
+                    display: inline-block;
+                    border-right: 1px solid #fff;
+                    padding: 5px 8px;
+                    a {
+                        background: url(../images/top/icon-help.png) no-repeat left center;
+                        height: 24px;
+                        display: inline-block;
+                        padding: 2px 0 0px 25px;
+                        color: #fff;
+                        font-size: 14px;
+                        @include transition;
+                        &:hover {
+                            color:#000;
+                            @include transition;
+                        }
+                    }
+                    &:nth-child(2n) a{
+                        background: url(../images/top/icon-register.png) no-repeat left center;
+                    }
+                    &:last-child {
+                        border: none;
+                        a {
+                        background: url(../images/top/icon-login.png) no-repeat left center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.tizi_container {
+    display: block;
+    max-width: 1501px;
+    min-width: 1235px;
+    width: 100%;
+    margin: 0 auto;
+}
+.tizi-slider {
+    width: 100%;
+    margin: 0 auto;
+}
+.tizi-content {
+    @include width-content;
+    .xhtk {
+        color: #000;
+        font-size: 25px;
+        text-transform: uppercase;
+        text-align: left;
+        padding: 20px 0;
+    }
+    .tizi-main {
+        width: calc(100% - 347px);
+        float:left;
+
+        .tizi-main__list {
+            text-align: center;
+            li {
+                display: inline-block;
+                max-width: 330px;
+                width: 31%;
+                height: auto;
+                position: relative;
+                vertical-align: top;
+                -webkit-box-shadow: 10px 10px 5px 0px rgba(235,230,235,1);
+                -moz-box-shadow: 10px 10px 5px 0px rgba(235,230,235,1);
+                box-shadow: 10px 10px 5px 0px rgba(235,230,235,1);
+                @include transition;
+                &:hover {
+
+                    -webkit-box-shadow: 4px 6px 12px 0px rgba(139,173,56,1);
+                    -moz-box-shadow: 4px 6px 12px 0px rgba(139,173,56,1);
+                    box-shadow: 4px 6px 12px 0px rgba(139,173,56,1);
+                    @include transition;
+                }
+                img {
+                    float: left;
+                    width: 100%;
+                }
+                &:nth-child(2) {
+                    margin: 0 3%;
+                }
+                .icon {
+                    position: absolute;
+                    top: 45px;
+                    left: 38%;
+                    width: 85px;
+                }
+                p {
+                    background-color: #31363d;
+                    color: #fff;
+                    font-size: 21px;
+                    font-family: "UTMAvo";
+                    text-align: center;
+                    padding: 14px 0 0 0;
+                    float: left;
+                    width: 100%;
+                    height: 73px; 
+                }
+                &:last-child p {
+                    padding-top: 27px;
+                    height: 60px;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .tizi-bg-list {
+            background: url(../images/top/bg-danh-muc.png) no-repeat center top;
+            width: calc(100% - 42px);
+            height: 470px;
+            float: left;
+            padding: 21px;
+            margin-top: 62px;
+            ul {
+                text-align: left;
+                li {
+                    display: inline-block;
+                    width: 136px;
+                    height: 136px;
+                    text-align: center;
+                    position: relative;
+                    float: left;
+                    margin-right: 12px;
+                    margin-bottom: 27px;
+                    &:nth-child(7n), &:nth-child(14) {
+                        margin-right: 0;
+                    }
+                    a {
+                        display: block;
+                        background: #fff url(../images/top/icon-building.png) no-repeat center top;
+                        width: 136px;
+                        height: 136px;
+                        position: relative;
+                        -webkit-transition: all 0.3s;
+                        -moz-transition: all 0.3s;
+                        transition: all 0.3s;
+
+                        &:hover {
+                            background: rgba(139,173,56,.8) url(../images/top/icon-building-hover.png) no-repeat center top;
+                            -webkit-transition: all 0.3s;
+                            -moz-transition: all 0.3s;
+                            transition: all 0.3s;
+                        }
+                        span {
+                            font-size: 13.7px;
+                            color: #000;
+                            font-family: "UTMAvo";
+                            display: inline-block;
+                            text-align: center;
+                            font-weight: 400;
+                            position: absolute;
+                            left: calc(50% - 68px);
+                            bottom: 16px;
+                            width: 100%;
+                            font-weight: 600;
+                            line-height: 17px;
+                        }
+                    }
+                    img {
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                    }
+                    &:first-child a{
+                        span {
+                            bottom: 24px;
+                        }
+                    }
+                    &:nth-child(2n) a{
+                        background: #fff url(../images/top/icon-car.png) no-repeat center top;
+                        &:hover {
+                            background: rgba(139,173,56,.8) url(../images/top/icon-car-hover.png) no-repeat center top;
+                        }
+                    }
+                    &:nth-child(3n) a{
+                        background: #fff url(../images/top/icon-user.png) no-repeat center top;
+                        &:hover {
+                            background: rgba(139,173,56,.8) url(../images/top/icon-user-hover.png) no-repeat center top;
+                        }
+                    }
+                    &:nth-child(4n) a{
+                        background: #fff url(../images/top/icon-phone.png) no-repeat center top;
+                        &:hover {
+                            background: rgba(139,173,56,.8) url(../images/top/icon-phone-hover.png) no-repeat center top;
+                        }
+                    }
+                    &:nth-child(5n) a{
+                        background: #fff url(../images/top/icon-tab.png) no-repeat center top;
+                        &:hover {
+                            background: rgba(139,173,56,.8) url(../images/top/icon-tab-hover.png) no-repeat center top;
+                        }
+                    }
+                    &:nth-child(6n) a{
+                        background: #fff url(../images/top/icon-house.png) no-repeat center top;
+                        &:hover {
+                            background: rgba(139,173,56,.8) url(../images/top/icon-house-hover.png) no-repeat center top;
+                        }
+                    }
+                    &:nth-child(7n) a{
+                        background: #fff url(../images/top/icon-kolor.png) no-repeat center top;
+                        &:hover {
+                            background: rgba(139,173,56,.8) url(../images/top/icon-kolor-hover.png) no-repeat center top;
+                        }
+                    }
+                    &:nth-child(8n) a{
+                        background: #fff url(../images/top/icon-col.png) no-repeat center top;
+                        &:hover {
+                            background: rgba(139,173,56,.8) url(../images/top/icon-col-hover.png) no-repeat center top;
+                        }
+                    }
+                    &:nth-child(9n) a{
+                        background: #fff url(../images/top/icon-retail.png) no-repeat center top;
+                        &:hover {
+                            background: rgba(139,173,56,.8) url(../images/top/icon-retail-hover.png) no-repeat center top;
+                        }
+                    }
+                    &:nth-child(10n) a{
+                        background: #fff url(../images/top/icon-cdua.png) no-repeat center top;
+                        &:hover {
+                            background: rgba(139,173,56,.8) url(../images/top/icon-cdua-hover.png) no-repeat center top;
+                        }
+                    }
+                    &:nth-child(11n) a{
+                        background: #fff url(../images/top/icon-hoptac.png) no-repeat center top;
+                        &:hover {
+                            background: rgba(139,173,56,.8) url(../images/top/icon-hoptac-hover.png) no-repeat center top;
+                        }
+                    }
+                    &:nth-child(12n) a{
+                        background: #fff url(../images/top/icon-mebe.png) no-repeat center top;
+                        &:hover {
+                            background: rgba(139,173,56,.8) url(../images/top/icon-mebe-hover.png) no-repeat center top;
+                        }
+                        span {
+                            bottom: 24px;
+                        }
+                    }
+                    &:nth-child(13n) a{
+                        background: #fff url(../images/top/icon-xedap.png) no-repeat center top;
+                        &:hover {
+                            background: rgba(139,173,56,.8) url(../images/top/icon-xedap-hover.png) no-repeat center top;
+                        }
+                    }
+                    &:nth-child(14n) a{
+                        background: #fff url(../images/top/icon-book.png) no-repeat center top;
+                        &:hover {
+                            background: rgba(139,173,56,.8) url(../images/top/icon-book-hover.png) no-repeat center top;
+                        }
+                    }
+                    &:nth-child(15n) a{
+                        background: #fff url(../images/top/icon-chen.png) no-repeat center top;
+                        &:hover {
+                            background: rgba(139,173,56,.8) url(../images/top/icon-chen-hover.png) no-repeat center top;
+                        }
+                    }
+                    &:nth-child(16n) a{
+                        background: #fff url(../images/top/icon-dog.png) no-repeat center top;
+                        &:hover {
+                            background: rgba(139,173,56,.8) url(../images/top/icon-dog-hover.png) no-repeat center top;
+                        }
+                    }
+                    &:nth-child(17n) a{
+                        background: #fff url(../images/top/icon-pic.png) no-repeat center top;
+                        &:hover {
+                            background: rgba(139,173,56,.8) url(../images/top/icon-pic-hover.png) no-repeat center top;
+                        }
+                        span {
+                            bottom: 24px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+    .tizi-aside {
+        float: right;
+        max-width: 300px;
+        width: 100%;
+        position: relative;
+        img {
+            width: 100%;
+        }
+        .app {
+            position: absolute;
+            bottom: 13px;
+            left: 32px;
+            &:hover {
+                opacity: 0.6;
+                @include transition;
+            }
+        }
+        .google {
+            left: inherit;
+            right: 33px;
+        }
+    }
+    .tizi-introduce {
+        display: inline-block;
+        width: 100%;
+        margin-top: 85px;
+        font-size: 22.9px;
+        text-align: left;
+    }
+}
+.tizi-footer {
+    background-color: #f4f4f4;
+    padding: 20px 0;
+    display: block;
+    margin-top: 62px;
+    width: 100%;
+    min-width: 1235px;
+    .tizi-footer__container {
+        @include width-content;
+        .tizi-footer__navi {
+            display: block;
+            text-align: left;
+            .tizi-buy {
+                display: inline-block;
+                vertical-align: top;
+                p {
+                    color: #000;
+                    font-size: 20px;
+                    border-left: 4px solid #fe5d43;
+                    padding: 0px 0 3px 10px;
+                    font-weight: bold;
+                    margin-bottom: 12px;
+                }
+                ul {
+                    text-align: left;
+                    li {
+                        display: inline-block;
+                    }
+                }
+            }
+            ul.tizi_footer__menu {
+                text-align: left;
+                margin-left: 123px;
+                display: inline-block;
+                vertical-align: top;
+                li {
+                    color: #635c5c;
+                    font-size: 15px;
+                    display: block;
+                    margin-bottom: 5px;
+                    &:first-child {
+                        margin-bottom:15px;
+                        font-weight: 600;
+                    }
+                    a {
+                        color: #000;
+                        font-family: 'UTMAvo';
+                        font-size: 13px;
+                        display: block;
+                        font-weight: 600;
+                        @include transition;
+
+                        &:hover {
+                            color:#9ac039;
+                            @include transition;
+                        }
+                    }
+                }
+            }
+        }
+        .tizi-info {
+            margin: 15px 0;
+            display: block;
+            text-align: left;
+            font-family: 'UTMAvo';
+            .tizi-add {
+                font-size: 14px;
+                color: #000;
+                width: 500px;
+                text-align: left;
+                font-weight: 600;
+                line-height: 21px;
+                display: inline-block;
+                span {
+                    color: #93919e;
+                    font-weight: normal;
+                }
+            }
+            .tizi-cocial-network {
+                float: right;
+                width: 243px;
+                margin-right: 250px;
+                .tizi-link {
+                    display: block;
+                    span {
+                        color: #635c5c;
+                        font-size: 15px;
+                        float: right;
+                        font-family: 'UTMAvo';
+                        font-weight: bold;
+                        display: inline-block;
+                        margin: 8px 30px 0 0;
+                    }
+                    ul {
+                        float: right;
+                        text-align: left;
+                        li {
+                            display: inline-block;
+                            text-align: left;
+                            &:hover {
+                                opacity: 0.6;
+                                @include transition;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .copyright {
+            color: #000;
+            font-size: 13px;
+            text-align: center;
+            font-weight: bold;
+        }
+    }
+}
+/*---page---*/
+.tizi_container_page {
+    width: 815px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    .xhtk {
+        color: #000;
+        font-size: 25px;
+        text-transform: uppercase;
+        text-align: left;
+        padding: 20px 0;
+    }
+    /**/
+    .tizi_gycb {
+        width: 100%;
+        height: 263px;
+        display: inline-block;
+        background-color: #979a9f;
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(128,126,128,1);
+        -moz-box-shadow: 0px 0px 10px 0px rgba(128,126,128,1);
+        box-shadow: 0px 0px 10px 0px rgba(128,126,128,1);
+        li {
+            width: 261px;
+            height: 110px;
+            display: inline-block;
+            background-color: #fff;
+            padding: 20px 0 0 8px;
+            text-align: left;
+            a {
+                background: url(../images/other_page/img-goiy-1.png) no-repeat left center;
+                width: 100%;
+                height: 91px;
+                display: table-cell;
+                vertical-align: middle;
+                color: #000;
+                font-size: 16px;
+                padding-left: 100px;
+                font-weight: bold;
+            }
+            &:nth-child(2n) a {
+                background: url(../images/other_page/img-goiy-2.png) no-repeat left center;
+            }
+            &:nth-child(3n) a {
+                background: url(../images/other_page/img-goiy-3.png) no-repeat left center;
+            }
+            &:nth-child(4n) a {
+                background: url(../images/other_page/img-goiy-4.png) no-repeat left center;
+            }
+            &:nth-child(5n) a {
+                background: url(../images/other_page/img-goiy-5.png) no-repeat left center;
+            }
+            &:nth-child(6n) a {
+                background: url(../images/other_page/img-goiy-6.png) no-repeat left center;
+            }
+        }
+    }
+    /**/
+    .tizi_gyhm {
+        width: 100%;
+        height: auto;
+        display: inline-block;
+        li {
+            width: 264px;
+            display: inline-block;
+            background: #fff;
+            margin-bottom: 8px;
+
+            &:nth-child(2), &:nth-child(5), &:nth-child(8) {
+                margin: 0 6px;
+            }
+            a {
+                img {
+                    max-width: 264px;
+                    width: 100%;
+                    height: 194px;
+                }
+                p {
+                    padding: 5px 10px 10px;
+                    span {
+                        display: inline-block;
+                        width: 100%;
+                        margin: 10px 0 0 0;
+                        text-align: left;
+                        color: #000;
+                        strong {
+                            font-size: 13px;
+                        }
+                        .add {
+                            
+                            float: left;
+                        }
+                        .date {
+                            background: url(../images/other_page/icon-bullet-down.png) no-repeat left center;
+                            padding-left: 22px;
+                            display: inline-block;
+                            float: right;
+                        }
+                    }
+                    .description {
+                        font-size: 16px;
+                        text-align: left;
+                        display: inline-block;
+                        width: 100%;
+                        
+                    }
+                    .price {
+                        font-size: 16px;
+                        color: #7fa02c;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+/**/
+/**/
+.show-sp {
+    display:none;
+}

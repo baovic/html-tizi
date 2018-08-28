@@ -1,0 +1,39 @@
+/*-----------variable*/
+$width_header: 1835px;
+$width_slide: 1503px;
+$width_content: 1415px;
+$width_content_main: 1070px;
+/*-----------mixin*/
+@mixin width-content {
+    max-width:$width_content;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+@mixin transition{
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+@mixin border-radius-left{
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+@mixin border-radius-right{
+    -webkit-border-top-right-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    -moz-border-radius-topright: 10px;
+    -moz-border-radius-bottomright: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+@mixin border-radius($number) {
+    -webkit-border-radius: $number;
+    -moz-border-radius: $number;
+    border-radius: $number;
+}
