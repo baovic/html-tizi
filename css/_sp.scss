@@ -160,6 +160,7 @@
 		display: inline-block !important;
 		width: 100%;
 		height: auto;
+	}
 		.xhtk {
 			font-size: 20px;
 		}
@@ -171,8 +172,8 @@
         		padding-top: 10px;
         		width: 32.9%;
         	}
-        }
-	        /**/
+        } 
+	    /**/
 		.tizi_gyhm { 
 	        li {
 	            margin: 0 0 4px 0 !important;
@@ -183,7 +184,6 @@
 	           	}
 	        }
 	    }
-	}
 	/*--footer---*/
 	.tizi-footer__sp {
 		display: inline-block !important;
@@ -228,8 +228,60 @@
 				} 
 			}
 		}
-
-
+	}
+	/*raovat*/
+	.tizi-content .tizi-content__page .tizi-content__left {
+	    float: none;
+	    display: block;
+	    margin: 0 auto;
+	}
+	.tizi-content .tizi-content__main {
+	    float: none;
+	    max-width: 1110px;
+	    width: 100%;
+	}
+	.tizi-content .tizi-content__main .tizi-search {
+		width: 90%;
+		margin-top: 20px;
+	}
+	.tizi-content .tizi-content__main .tizi-search form .input {
+		float: none;
+		display: block;
+		max-width: 100%;
+		width: 100%;
+		margin: 0 auto 10px auto;
+	}
+	.tizi-content .tizi-content__main .tizi-search form div {
+	    position: relative;
+	    float: none;
+	    width: 100%;
+	    height: 56px;
+	    margin-left: 0;
+	    display: block;
+	    margin-bottom: 10px;
+	}
+	.tizi-content .tizi-content__main .tizi-search form .diadiem {
+	    position: relative;
+	    float: none;
+	    margin-left: 0;
+	    width: 100%;
+	}
+	.tizi-content .tizi-content__main .tizi-content__main--left .list-tab li {
+		display: inline-block;
+	    width: 31%;
+	    height: auto;
+	    font-size: 18px;
+	}.tizi-content .tizi-content__main .tizi-content__main--left .list-tab li.show-sp {
+		display: inline-block !important;
+	}
+	.tizi-content .tizi-content__main .tizi-content__main--left .list-tab li a {
+		height: 42px;
+	}
+	.content-tab .paging {
+	    margin: 24px 0;
+	}
+	.tizi-content .xhtk--page {
+		background: #fff;
 	}
 /*end media*/
 }
@@ -249,26 +301,22 @@
 /*end media*/
 }
 @media screen and (min-width: 577px) and (max-width: 640px){
-	.tizi_container_page {
-		.tizi_gycb {
-        	li {
-        		width: 32.86%;
-        	}
-        }
-	}
+	.tizi_gycb {
+    	li {
+    		width: 32.86%;
+    	}
+    }
 }
 @media screen and (max-width: 576px){
-	.tizi_container_page {
-		.tizi_gycb {
-        	li {
-        		width: 49%;
-        		padding-left: 0;
-        		a {
-        			font-size: 14px;
-        		}
-        	}
-        }
-	}
+	.tizi_gycb {
+    	li {
+    		width: 49%;
+    		padding-left: 0;
+    		a {
+    			font-size: 14px;
+    		}
+    	}
+    }
 }
 @media screen and (max-width: 478px){
 	.tizi-footer__sp {
@@ -276,7 +324,7 @@
 			margin: 0 3%;
 		}
 	}
-}			
+}
 @media screen and (min-width: 415px) and (max-width: 633px){
 	.tizi-content {
 		.tizi-main {
@@ -320,21 +368,19 @@
 		}
 	}
 }
-@media screen and (max-width: 340px){
-	.tizi_container_page {
-		.tizi_gycb {
-        	li {
-        		a {
-        			font-size: 13px;
-        		}
-        	}
-        }
-	}
-}
 @media screen and (max-width: 355px) {
 	.tizi-footer__sp {
 		ul li {
 			margin: 0 0.5%;
 		}
 	}
+}
+@media screen and (max-width: 340px){
+	.tizi_gycb {
+    	li {
+    		a {
+    			font-size: 13px;
+    		}
+    	}
+    }
 }

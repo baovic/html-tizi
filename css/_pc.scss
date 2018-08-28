@@ -7,6 +7,9 @@
     padding-top: 16px;
     background-color: #9ac039;
     text-align: center;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(150,147,150,1);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(150,147,150,1);
+    box-shadow: 0px 2px 5px 0px rgba(150,147,150,1);
 
     .tizi-header__container {
         max-width: 1835px;
@@ -421,6 +424,7 @@
     }
 }
 .tizi-footer {
+    clear: both;
     background-color: #f4f4f4;
     padding: 20px 0;
     display: block;
@@ -536,12 +540,13 @@
         }
     }
 }
-/*---page---*/
+/*---top sp---*/
 .tizi_container_page {
     width: 815px;
     margin: 0 auto;
     display: block;
     text-align: center;
+}
     .xhtk {
         color: #000;
         font-size: 25px;
@@ -593,7 +598,7 @@
             }
         }
     }
-    /**/
+/**/
     .tizi_gyhm {
         width: 100%;
         height: auto;
@@ -649,6 +654,251 @@
                     }
                 }
             }
+        }
+    }
+/*raovat*/
+.bg-page {
+    background: #f2f3f7;
+}
+.img-banner {
+    width: 100%;
+    margin: 4px auto 0 auto;
+}
+.tizi-content {
+    .xhtk--page{
+        padding:10px 0;
+        span {
+            color: #9ac039;
+            text-transform: none;
+        }
+    }
+    .tizi-content__page {
+        width: 100%;
+        .tizi-content__left {
+            width: 273px;
+            float: left;
+            .img-raovat {
+                width: 100%;
+            }
+            .tizi-dmrv {
+                text-align: center;
+                display: block;
+                background: #44494f;
+                padding-bottom: 10px;
+                li {
+                    display: block;
+                    text-align: center;
+                    color: #fff;
+                    font-size: 24px;
+
+                    &:first-child {
+                       background: #31363d;
+                       padding: 10px 0;
+                    }
+                    a {
+                        color: #fff;
+                        display: block;
+                        padding: 3px 0;
+                        font-size: 15px;
+                        &:hover {
+                            color:#000;
+                            background: #e1e2e3 url(../images/other_page/icon-bullet-right.png) no-repeat right center;
+                        }
+                    }
+                }
+            }
+            .tizi-tktt {
+                margin: 30px 0 50px 0;
+                li {
+                    display: block;
+                    text-align: left;
+                    font-size: 23px;
+                    &:first-child {
+                        text-align: center !important;
+                        background: #dfe0e5;
+                        padding: 15px 0;
+                        margin-bottom: 10px;
+                    }
+                    a {
+                        display: block;
+                        padding: 0;
+                        font-size: 15px;
+                        color: #555555;
+                        &:hover {
+                            color:#f69a04;
+                        }
+                    }
+                    &:nth-child(2n+1) {
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+    .tizi-content__main {
+        float: right;
+        max-width: 1110px;
+        width: calc(100% - 298px);
+        /**/
+        .tizi-search {
+            display: inline-block;
+            width: 100%;
+            margin-bottom: 57px;
+            form .input {
+                float: left;
+                width: calc(100% - 590px);
+                max-width: 520px;
+                height: 54px;
+                text-indent: 15px;
+                border: 1px solid #9ac039;
+                background: #fff;
+                -webkit-box-shadow: 0px 1px 6px 0px rgba(150,147,150,1);
+                -moz-box-shadow: 0px 1px 6px 0px rgba(150,147,150,1);
+                box-shadow: 0px 1px 6px 0px rgba(150,147,150,1);
+                font-size: 16px;
+                font-family: "UTMAvo", Fallback, sans-serif;
+            }
+            form div {
+                position: relative;
+                float: left;
+                width: 260px;
+                height: 56px;
+                margin-left: 30px;
+                span {
+                    background: url(../images/other_page/icon-diadiem.png) no-repeat left top;
+                    width: 38px;
+                    height: 50px;
+                    display: inline-block;
+                    position: absolute;
+                    left: 1px;
+                    top: 1px;
+                }
+                .diadiem {
+                    margin-left: 0;
+                    text-indent: 35px;
+                }
+            }
+            form .diadiem {
+                position: relative;
+                float: left;
+                margin-left: 30px;
+                width: 260px;
+                height: 56px;
+                border: 1px solid #9ac039;
+                text-indent: 15px;
+                background: #fff url(../images/other_page/icon-bullet-down-select.png) no-repeat right center;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                -webkit-box-shadow: 0px 1px 6px 0px rgba(150,147,150,1);
+                -moz-box-shadow: 0px 1px 6px 0px rgba(150,147,150,1);
+                box-shadow: 0px 1px 6px 0px rgba(150,147,150,1);
+                font-size: 16px;
+                font-family: "UTMAvo", Fallback, sans-serif;
+            }
+        }
+        /**/
+        .tizi-content__main--left {
+            float: left;
+            max-width: 810px;
+            width: 100%;
+            .list-tab {
+                display: block;
+                margin-bottom: 20px;
+                li {
+                    display: inline-block;
+                    width: 100%;
+                    max-width: 267px;
+                    height: 50px;
+                    font-size: 24px;
+                    text-align: center;
+                    padding:0;
+                    cursor: pointer;
+                    &:nth-child(2) {
+                        margin: 0 0.5px;
+                    }
+                    &:hover {
+                        background:#9ac039;
+                        color: #000;
+                        border-radius: 3px;
+                        -webkit-box-shadow: 1px 2px 2px 1px rgba(150,147,150,1);
+                        -moz-box-shadow: 1px 2px 2px 1px rgba(150,147,150,1);
+                        box-shadow: 1px 2px 2px 1px rgba(150,147,150,1);
+
+                        a {
+                            border: none;
+                            height: auto;
+                            padding: 10px 0;
+                        }
+                    }
+                    a {
+                        display: inline-block;
+                        width: 90%;
+                        height: 35px;
+                        border-bottom: 4px solid #6d7177;
+                        border-radius: 3px;
+                        padding-top: 7px;
+                    }
+                }
+                .active {
+                    background:#9ac039;
+                    color: #000;
+                    border-radius: 3px;
+                    -webkit-box-shadow: 1px 2px 2px 1px rgba(150,147,150,1);
+                    -moz-box-shadow: 1px 2px 2px 1px rgba(150,147,150,1);
+                    box-shadow: 1px 2px 2px 1px rgba(150,147,150,1);
+
+                    a {
+                        border: none;
+                        height: auto;
+                        padding: 10px 0;
+                    }
+                }
+            }
+            .content-tab {
+                display: block;
+                .tizi-tab {
+                    display: none;
+                    .tizi_gyhm li:nth-child(2), .tizi_gyhm li:nth-child(5), .tizi_gyhm li:nth-child(8),.tizi_gyhm li:nth-child(11) {
+                        margin: 0 5px;
+                    }
+                }
+            }
+            .tizi_gycb li {
+                padding-left: 6px;
+            }
+        }
+        .tizi-content__right {
+            float: right;
+            background: #ff0000;
+            width: 268px;
+        }
+    }
+}
+.tizi-content .tizi-content__main .tizi-content__main--left .list-tab li.show-sp {
+    display: none;
+}
+.paging {
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+    li {
+        display: inline-block;
+        a{
+            color: #000;
+            display: block;
+            border: 1px solid #dcdcdc;
+            padding: 5px 10px 7px 10px;
+            background: #fff;
+            font-weight: bold;
+            &:hover{
+                background: #9ac039;
+                color: #fff;
+            }
+        }
+        .active {
+            background: #9ac039;
+            color: #fff;
         }
     }
 }

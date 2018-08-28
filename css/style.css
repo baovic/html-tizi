@@ -56,7 +56,10 @@ body {
   margin: 0 auto;
   padding-top: 16px;
   background-color: #9ac039;
-  text-align: center; }
+  text-align: center;
+  -webkit-box-shadow: 0px 2px 5px 0px #969396;
+  -moz-box-shadow: 0px 2px 5px 0px #969396;
+  box-shadow: 0px 2px 5px 0px #969396; }
   .tizi-header .tizi-header__container {
     max-width: 1835px;
     width: 100%;
@@ -403,6 +406,7 @@ body {
     text-align: left; }
 
 .tizi-footer {
+  clear: both;
   background-color: #f4f4f4;
   padding: 20px 0;
   display: block;
@@ -506,96 +510,300 @@ body {
       text-align: center;
       font-weight: bold; }
 
-/*---page---*/
+/*---top sp---*/
 .tizi_container_page {
   width: 815px;
   margin: 0 auto;
   display: block;
-  text-align: center;
+  text-align: center; }
+
+.xhtk {
+  color: #000;
+  font-size: 25px;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 20px 0; }
+
+/**/
+.tizi_gycb {
+  width: 100%;
+  height: 263px;
+  display: inline-block;
+  background-color: #979a9f;
+  -webkit-box-shadow: 0px 0px 10px 0px #807e80;
+  -moz-box-shadow: 0px 0px 10px 0px #807e80;
+  box-shadow: 0px 0px 10px 0px #807e80; }
+  .tizi_gycb li {
+    width: 261px;
+    height: 110px;
+    display: inline-block;
+    background-color: #fff;
+    padding: 20px 0 0 8px;
+    text-align: left; }
+    .tizi_gycb li a {
+      background: url(../images/other_page/img-goiy-1.png) no-repeat left center;
+      width: 100%;
+      height: 91px;
+      display: table-cell;
+      vertical-align: middle;
+      color: #000;
+      font-size: 16px;
+      padding-left: 100px;
+      font-weight: bold; }
+    .tizi_gycb li:nth-child(2n) a {
+      background: url(../images/other_page/img-goiy-2.png) no-repeat left center; }
+    .tizi_gycb li:nth-child(3n) a {
+      background: url(../images/other_page/img-goiy-3.png) no-repeat left center; }
+    .tizi_gycb li:nth-child(4n) a {
+      background: url(../images/other_page/img-goiy-4.png) no-repeat left center; }
+    .tizi_gycb li:nth-child(5n) a {
+      background: url(../images/other_page/img-goiy-5.png) no-repeat left center; }
+    .tizi_gycb li:nth-child(6n) a {
+      background: url(../images/other_page/img-goiy-6.png) no-repeat left center; }
+
+/**/
+.tizi_gyhm {
+  width: 100%;
+  height: auto;
+  display: inline-block; }
+  .tizi_gyhm li {
+    width: 264px;
+    display: inline-block;
+    background: #fff;
+    margin-bottom: 8px; }
+    .tizi_gyhm li:nth-child(2), .tizi_gyhm li:nth-child(5), .tizi_gyhm li:nth-child(8) {
+      margin: 0 6px; }
+    .tizi_gyhm li a img {
+      max-width: 264px;
+      width: 100%;
+      height: 194px; }
+    .tizi_gyhm li a p {
+      padding: 5px 10px 10px; }
+      .tizi_gyhm li a p span {
+        display: inline-block;
+        width: 100%;
+        margin: 10px 0 0 0;
+        text-align: left;
+        color: #000; }
+        .tizi_gyhm li a p span strong {
+          font-size: 13px; }
+        .tizi_gyhm li a p span .add {
+          float: left; }
+        .tizi_gyhm li a p span .date {
+          background: url(../images/other_page/icon-bullet-down.png) no-repeat left center;
+          padding-left: 22px;
+          display: inline-block;
+          float: right; }
+      .tizi_gyhm li a p .description {
+        font-size: 16px;
+        text-align: left;
+        display: inline-block;
+        width: 100%; }
+      .tizi_gyhm li a p .price {
+        font-size: 16px;
+        color: #7fa02c;
+        font-weight: bold; }
+
+/*raovat*/
+.bg-page {
+  background: #f2f3f7; }
+
+.img-banner {
+  width: 100%;
+  margin: 4px auto 0 auto; }
+
+.tizi-content .xhtk--page {
+  padding: 10px 0; }
+  .tizi-content .xhtk--page span {
+    color: #9ac039;
+    text-transform: none; }
+.tizi-content .tizi-content__page {
+  width: 100%; }
+  .tizi-content .tizi-content__page .tizi-content__left {
+    width: 273px;
+    float: left; }
+    .tizi-content .tizi-content__page .tizi-content__left .img-raovat {
+      width: 100%; }
+    .tizi-content .tizi-content__page .tizi-content__left .tizi-dmrv {
+      text-align: center;
+      display: block;
+      background: #44494f;
+      padding-bottom: 10px; }
+      .tizi-content .tizi-content__page .tizi-content__left .tizi-dmrv li {
+        display: block;
+        text-align: center;
+        color: #fff;
+        font-size: 24px; }
+        .tizi-content .tizi-content__page .tizi-content__left .tizi-dmrv li:first-child {
+          background: #31363d;
+          padding: 10px 0; }
+        .tizi-content .tizi-content__page .tizi-content__left .tizi-dmrv li a {
+          color: #fff;
+          display: block;
+          padding: 3px 0;
+          font-size: 15px; }
+          .tizi-content .tizi-content__page .tizi-content__left .tizi-dmrv li a:hover {
+            color: #000;
+            background: #e1e2e3 url(../images/other_page/icon-bullet-right.png) no-repeat right center; }
+    .tizi-content .tizi-content__page .tizi-content__left .tizi-tktt {
+      margin: 30px 0 50px 0; }
+      .tizi-content .tizi-content__page .tizi-content__left .tizi-tktt li {
+        display: block;
+        text-align: left;
+        font-size: 23px; }
+        .tizi-content .tizi-content__page .tizi-content__left .tizi-tktt li:first-child {
+          text-align: center !important;
+          background: #dfe0e5;
+          padding: 15px 0;
+          margin-bottom: 10px; }
+        .tizi-content .tizi-content__page .tizi-content__left .tizi-tktt li a {
+          display: block;
+          padding: 0;
+          font-size: 15px;
+          color: #555555; }
+          .tizi-content .tizi-content__page .tizi-content__left .tizi-tktt li a:hover {
+            color: #f69a04; }
+        .tizi-content .tizi-content__page .tizi-content__left .tizi-tktt li:nth-child(2n+1) {
+          text-align: right; }
+.tizi-content .tizi-content__main {
+  float: right;
+  max-width: 1110px;
+  width: calc(100% - 298px);
   /**/
   /**/ }
-  .tizi_container_page .xhtk {
-    color: #000;
-    font-size: 25px;
-    text-transform: uppercase;
-    text-align: left;
-    padding: 20px 0; }
-  .tizi_container_page .tizi_gycb {
-    width: 100%;
-    height: 263px;
+  .tizi-content .tizi-content__main .tizi-search {
     display: inline-block;
-    background-color: #979a9f;
-    -webkit-box-shadow: 0px 0px 10px 0px #807e80;
-    -moz-box-shadow: 0px 0px 10px 0px #807e80;
-    box-shadow: 0px 0px 10px 0px #807e80; }
-    .tizi_container_page .tizi_gycb li {
-      width: 261px;
-      height: 110px;
-      display: inline-block;
-      background-color: #fff;
-      padding: 20px 0 0 8px;
-      text-align: left; }
-      .tizi_container_page .tizi_gycb li a {
-        background: url(../images/other_page/img-goiy-1.png) no-repeat left center;
-        width: 100%;
-        height: 91px;
-        display: table-cell;
-        vertical-align: middle;
-        color: #000;
-        font-size: 16px;
-        padding-left: 100px;
-        font-weight: bold; }
-      .tizi_container_page .tizi_gycb li:nth-child(2n) a {
-        background: url(../images/other_page/img-goiy-2.png) no-repeat left center; }
-      .tizi_container_page .tizi_gycb li:nth-child(3n) a {
-        background: url(../images/other_page/img-goiy-3.png) no-repeat left center; }
-      .tizi_container_page .tizi_gycb li:nth-child(4n) a {
-        background: url(../images/other_page/img-goiy-4.png) no-repeat left center; }
-      .tizi_container_page .tizi_gycb li:nth-child(5n) a {
-        background: url(../images/other_page/img-goiy-5.png) no-repeat left center; }
-      .tizi_container_page .tizi_gycb li:nth-child(6n) a {
-        background: url(../images/other_page/img-goiy-6.png) no-repeat left center; }
-  .tizi_container_page .tizi_gyhm {
     width: 100%;
-    height: auto;
-    display: inline-block; }
-    .tizi_container_page .tizi_gyhm li {
-      width: 264px;
-      display: inline-block;
+    margin-bottom: 57px; }
+    .tizi-content .tizi-content__main .tizi-search form .input {
+      float: left;
+      width: calc(100% - 590px);
+      max-width: 520px;
+      height: 54px;
+      text-indent: 15px;
+      border: 1px solid #9ac039;
       background: #fff;
-      margin-bottom: 8px; }
-      .tizi_container_page .tizi_gyhm li:nth-child(2), .tizi_container_page .tizi_gyhm li:nth-child(5), .tizi_container_page .tizi_gyhm li:nth-child(8) {
-        margin: 0 6px; }
-      .tizi_container_page .tizi_gyhm li a img {
-        max-width: 264px;
+      -webkit-box-shadow: 0px 1px 6px 0px #969396;
+      -moz-box-shadow: 0px 1px 6px 0px #969396;
+      box-shadow: 0px 1px 6px 0px #969396;
+      font-size: 16px;
+      font-family: "UTMAvo", Fallback, sans-serif; }
+    .tizi-content .tizi-content__main .tizi-search form div {
+      position: relative;
+      float: left;
+      width: 260px;
+      height: 56px;
+      margin-left: 30px; }
+      .tizi-content .tizi-content__main .tizi-search form div span {
+        background: url(../images/other_page/icon-diadiem.png) no-repeat left top;
+        width: 38px;
+        height: 50px;
+        display: inline-block;
+        position: absolute;
+        left: 1px;
+        top: 1px; }
+      .tizi-content .tizi-content__main .tizi-search form div .diadiem {
+        margin-left: 0;
+        text-indent: 35px; }
+    .tizi-content .tizi-content__main .tizi-search form .diadiem {
+      position: relative;
+      float: left;
+      margin-left: 30px;
+      width: 260px;
+      height: 56px;
+      border: 1px solid #9ac039;
+      text-indent: 15px;
+      background: #fff url(../images/other_page/icon-bullet-down-select.png) no-repeat right center;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      -webkit-box-shadow: 0px 1px 6px 0px #969396;
+      -moz-box-shadow: 0px 1px 6px 0px #969396;
+      box-shadow: 0px 1px 6px 0px #969396;
+      font-size: 16px;
+      font-family: "UTMAvo", Fallback, sans-serif; }
+  .tizi-content .tizi-content__main .tizi-content__main--left {
+    float: left;
+    max-width: 810px;
+    width: 100%; }
+    .tizi-content .tizi-content__main .tizi-content__main--left .list-tab {
+      display: block;
+      margin-bottom: 20px; }
+      .tizi-content .tizi-content__main .tizi-content__main--left .list-tab li {
+        display: inline-block;
         width: 100%;
-        height: 194px; }
-      .tizi_container_page .tizi_gyhm li a p {
-        padding: 5px 10px 10px; }
-        .tizi_container_page .tizi_gyhm li a p span {
+        max-width: 267px;
+        height: 50px;
+        font-size: 24px;
+        text-align: center;
+        padding: 0;
+        cursor: pointer; }
+        .tizi-content .tizi-content__main .tizi-content__main--left .list-tab li:nth-child(2) {
+          margin: 0 0.5px; }
+        .tizi-content .tizi-content__main .tizi-content__main--left .list-tab li:hover {
+          background: #9ac039;
+          color: #000;
+          border-radius: 3px;
+          -webkit-box-shadow: 1px 2px 2px 1px #969396;
+          -moz-box-shadow: 1px 2px 2px 1px #969396;
+          box-shadow: 1px 2px 2px 1px #969396; }
+          .tizi-content .tizi-content__main .tizi-content__main--left .list-tab li:hover a {
+            border: none;
+            height: auto;
+            padding: 10px 0; }
+        .tizi-content .tizi-content__main .tizi-content__main--left .list-tab li a {
           display: inline-block;
-          width: 100%;
-          margin: 10px 0 0 0;
-          text-align: left;
-          color: #000; }
-          .tizi_container_page .tizi_gyhm li a p span strong {
-            font-size: 13px; }
-          .tizi_container_page .tizi_gyhm li a p span .add {
-            float: left; }
-          .tizi_container_page .tizi_gyhm li a p span .date {
-            background: url(../images/other_page/icon-bullet-down.png) no-repeat left center;
-            padding-left: 22px;
-            display: inline-block;
-            float: right; }
-        .tizi_container_page .tizi_gyhm li a p .description {
-          font-size: 16px;
-          text-align: left;
-          display: inline-block;
-          width: 100%; }
-        .tizi_container_page .tizi_gyhm li a p .price {
-          font-size: 16px;
-          color: #7fa02c;
-          font-weight: bold; }
+          width: 90%;
+          height: 35px;
+          border-bottom: 4px solid #6d7177;
+          border-radius: 3px;
+          padding-top: 7px; }
+      .tizi-content .tizi-content__main .tizi-content__main--left .list-tab .active {
+        background: #9ac039;
+        color: #000;
+        border-radius: 3px;
+        -webkit-box-shadow: 1px 2px 2px 1px #969396;
+        -moz-box-shadow: 1px 2px 2px 1px #969396;
+        box-shadow: 1px 2px 2px 1px #969396; }
+        .tizi-content .tizi-content__main .tizi-content__main--left .list-tab .active a {
+          border: none;
+          height: auto;
+          padding: 10px 0; }
+    .tizi-content .tizi-content__main .tizi-content__main--left .content-tab {
+      display: block; }
+      .tizi-content .tizi-content__main .tizi-content__main--left .content-tab .tizi-tab {
+        display: none; }
+        .tizi-content .tizi-content__main .tizi-content__main--left .content-tab .tizi-tab .tizi_gyhm li:nth-child(2), .tizi-content .tizi-content__main .tizi-content__main--left .content-tab .tizi-tab .tizi_gyhm li:nth-child(5), .tizi-content .tizi-content__main .tizi-content__main--left .content-tab .tizi-tab .tizi_gyhm li:nth-child(8), .tizi-content .tizi-content__main .tizi-content__main--left .content-tab .tizi-tab .tizi_gyhm li:nth-child(11) {
+          margin: 0 5px; }
+    .tizi-content .tizi-content__main .tizi-content__main--left .tizi_gycb li {
+      padding-left: 6px; }
+  .tizi-content .tizi-content__main .tizi-content__right {
+    float: right;
+    background: #ff0000;
+    width: 268px; }
+
+.tizi-content .tizi-content__main .tizi-content__main--left .list-tab li.show-sp {
+  display: none; }
+
+.paging {
+  display: block;
+  text-align: center;
+  margin-top: 50px; }
+  .paging li {
+    display: inline-block; }
+    .paging li a {
+      color: #000;
+      display: block;
+      border: 1px solid #dcdcdc;
+      padding: 5px 10px 7px 10px;
+      background: #fff;
+      font-weight: bold; }
+      .paging li a:hover {
+        background: #9ac039;
+        color: #fff; }
+    .paging li .active {
+      background: #9ac039;
+      color: #fff; }
 
 /**/
 /**/
@@ -734,23 +942,26 @@ body {
   .tizi_container_page {
     display: inline-block !important;
     width: 100%;
+    height: auto; }
+
+  .xhtk {
+    font-size: 20px; }
+
+  .tizi_gycb {
+    width: 100%;
     height: auto;
-    /**/ }
-    .tizi_container_page .xhtk {
-      font-size: 20px; }
-    .tizi_container_page .tizi_gycb {
-      width: 100%;
-      height: auto;
-      background-color: #979a9f; }
-      .tizi_container_page .tizi_gycb li {
-        padding-top: 10px;
-        width: 32.9%; }
-    .tizi_container_page .tizi_gyhm li {
-      margin: 0 0 4px 0 !important;
-      max-width: 264px;
-      width: 49%; }
-      .tizi_container_page .tizi_gyhm li a img {
-        height: auto; }
+    background-color: #979a9f; }
+    .tizi_gycb li {
+      padding-top: 10px;
+      width: 32.9%; }
+
+  /**/
+  .tizi_gyhm li {
+    margin: 0 0 4px 0 !important;
+    max-width: 264px;
+    width: 49%; }
+    .tizi_gyhm li a img {
+      height: auto; }
 
   /*--footer---*/
   .tizi-footer__sp {
@@ -788,6 +999,61 @@ body {
         .tizi-footer__sp ul li:nth-child(4) a {
           background: url(../images/top/sp/icon-taikhoan.png) no-repeat center top; }
 
+  /*raovat*/
+  .tizi-content .tizi-content__page .tizi-content__left {
+    float: none;
+    display: block;
+    margin: 0 auto; }
+
+  .tizi-content .tizi-content__main {
+    float: none;
+    max-width: 1110px;
+    width: 100%; }
+
+  .tizi-content .tizi-content__main .tizi-search {
+    width: 90%;
+    margin-top: 20px; }
+
+  .tizi-content .tizi-content__main .tizi-search form .input {
+    float: none;
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto 10px auto; }
+
+  .tizi-content .tizi-content__main .tizi-search form div {
+    position: relative;
+    float: none;
+    width: 100%;
+    height: 56px;
+    margin-left: 0;
+    display: block;
+    margin-bottom: 10px; }
+
+  .tizi-content .tizi-content__main .tizi-search form .diadiem {
+    position: relative;
+    float: none;
+    margin-left: 0;
+    width: 100%; }
+
+  .tizi-content .tizi-content__main .tizi-content__main--left .list-tab li {
+    display: inline-block;
+    width: 31%;
+    height: auto;
+    font-size: 18px; }
+
+  .tizi-content .tizi-content__main .tizi-content__main--left .list-tab li.show-sp {
+    display: inline-block !important; }
+
+  .tizi-content .tizi-content__main .tizi-content__main--left .list-tab li a {
+    height: 42px; }
+
+  .content-tab .paging {
+    margin: 24px 0; }
+
+  .tizi-content .xhtk--page {
+    background: #fff; }
+
   /*end media*/ }
 @media screen and (max-width: 615px) {
   .tizi-content .tizi-main .tizi-main__list li {
@@ -797,13 +1063,13 @@ body {
 
   /*end media*/ }
 @media screen and (min-width: 577px) and (max-width: 640px) {
-  .tizi_container_page .tizi_gycb li {
+  .tizi_gycb li {
     width: 32.86%; } }
 @media screen and (max-width: 576px) {
-  .tizi_container_page .tizi_gycb li {
+  .tizi_gycb li {
     width: 49%;
     padding-left: 0; }
-    .tizi_container_page .tizi_gycb li a {
+    .tizi_gycb li a {
       font-size: 14px; } }
 @media screen and (max-width: 478px) {
   .tizi-footer__sp ul li {
@@ -829,11 +1095,11 @@ body {
 @media screen and (max-width: 407px) {
   .tizi-footer__sp ul li {
     margin: 0 1.5%; } }
-@media screen and (max-width: 340px) {
-  .tizi_container_page .tizi_gycb li a {
-    font-size: 13px; } }
 @media screen and (max-width: 355px) {
   .tizi-footer__sp ul li {
     margin: 0 0.5%; } }
+@media screen and (max-width: 340px) {
+  .tizi_gycb li a {
+    font-size: 13px; } }
 
 /*# sourceMappingURL=style.css.map */
