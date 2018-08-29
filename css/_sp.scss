@@ -8,8 +8,13 @@
 	.tizi_gycb li {
 		width: 31.8%;
 	}
+
 }
 @media screen and (max-width: 1293px) {
+	.tizi-list-tttd li, .tizi-tvllc li {
+		width: 48.8%;
+	}
+
 	.tizi-content .tizi-main .tizi-bg-list ul li,
 	.tizi-content .tizi-main .tizi-bg-list ul li:nth-child(7n), 
 	.tizi-content .tizi-main .tizi-bg-list ul li:nth-child(14) {
@@ -45,8 +50,8 @@
 	            width: calc(100% - 170px);
 
 	            .search {
-	                @include border-radius(5px);
-	                width: 100%;
+	                border-radius:5px !important;
+	                width: 100% !important;
 	            }
 	        }
 	        .tizi-group-login {
@@ -308,7 +313,44 @@
 		float: none;
 		display: inline-block;
 	}
+	.tizi-gnn li p {
+		width: 100%;
+	}
+	.tizi-list-tttd {
+		text-align: center;
+	}
+	.img-quangcao {
+	    max-width: 272px;
+	}
+	.tizi-list-tttd li, .tizi-tvllc li {
+		width: 48%;
+	}
+	.tizi-tvllc {
+		text-align: center;
+		li {
+			margin-bottom: 10px;
+		}
+	}
 /*end media*/
+}
+@media screen and (max-width: 670px) {
+	.tizi-list-tttd li div p .date {
+		float: left;
+	}
+	.tizi_vlh li img {
+		margin-right: 10px;
+	}
+}
+@media screen and (max-width: 640px) {
+	.tizi-list-tttd li div p .date {
+		float: left;
+	}
+	.tizi_vlh li div .info {
+	    display: block;
+	    overflow: inherit;
+	    float: none;
+	    width: 100%;
+	}
 }
 @media screen and (max-width: 615px) {
 	.tizi-content {
@@ -342,6 +384,15 @@
     		}
     	}
     }
+}
+@media screen and (max-width: 515px) {
+	.tizi-list-tttd li {
+		width: 100%;
+		margin: 0 0 10px 0 !important;
+	}
+	.tizi-list-tttd li div p .date {
+		float: right;
+	}
 }
 @media screen and (max-width: 478px){
 	.tizi-footer__sp {
@@ -387,6 +438,15 @@
 	.tizi_gyhm li{
             width: 49%;  	
     }
+    .tizi-gnn li {
+    	max-width: 100%;
+    	img {
+    		width: 100%;
+    	}
+    }
+    .tizi_vlh li div {
+    	margin-top: 0;
+    }
 /*end media*/
 }
 @media screen and (max-width: 407px) {
@@ -394,6 +454,17 @@
 		ul li {
 			margin: 0 1.5%;
 		}
+	}
+}
+@media screen and (max-width: 364px) {
+	.tizi-tvllc li {
+		width: 47%;
+		margin: 0 0px 4px 0
+	}
+}
+@media screen and (max-width: 375px) {
+	.tizi-content .tizi-content__main .tizi-content__main--left .list-tab li {
+		font-size: 14px;
 	}
 }
 @media screen and (max-width: 355px) {

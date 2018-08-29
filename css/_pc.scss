@@ -91,7 +91,7 @@
                     padding: 3px 20px 6px 20px;
                     font-family: "UTMAvo", Fallback, sans-serif;
                     color: #fff;
-                    font-size: 20px;
+                    font-size: 18px;
                     font-weight: bold;
                     text-transform: uppercase;
                     vertical-align: top;
@@ -448,6 +448,11 @@
                     font-weight: bold;
                     margin-bottom: 12px;
                 }
+                .cskh {
+                    font-size: 13px;
+                    color: #000;
+                    font-weight: 600;
+                }
                 ul {
                     text-align: left;
                     li {
@@ -730,8 +735,10 @@
                         padding: 0;
                         font-size: 15px;
                         color: #555555;
+                         @include transition;
                         &:hover {
                             color:#f69a04;
+                             @include transition;
                         }
                     }
                     &:nth-child(2n+1) {
@@ -779,6 +786,10 @@
                     left: 1px;
                     top: 1px;
                 }
+                .tcnn {
+                    background: url(../images/other_page/icon-allnn.png) no-repeat left -4px;
+                    width: 37px;
+                }
                 .diadiem {
                     margin-left: 0;
                     text-indent: 35px;
@@ -820,6 +831,8 @@
                     text-align: center;
                     padding:0;
                     cursor: pointer;
+                    @include transition;
+
                     &:nth-child(2) {
                         margin: 0 0.5px;
                     }
@@ -830,7 +843,7 @@
                         -webkit-box-shadow: 1px 2px 2px 1px rgba(150,147,150,1);
                         -moz-box-shadow: 1px 2px 2px 1px rgba(150,147,150,1);
                         box-shadow: 1px 2px 2px 1px rgba(150,147,150,1);
-
+                         @include transition;
                         a {
                             border: none;
                             height: auto;
@@ -946,7 +959,7 @@
             color: #000;
             display: block;
             border: 1px solid #dcdcdc;
-            padding: 5px 10px 7px 10px;
+            padding: 5px 12px 7px 12px;
             background: #fff;
             font-weight: bold;
             &:hover{
@@ -961,7 +974,343 @@
     }
 }
 /**/
+.timkiem-nangcao {
+    display: block;
+    div {
+        display: block;
+        margin-top: 20px;
+        background: #dfe0e5;
+        padding:5px 15px 10px 15px;
+        label {
+            text-transform: uppercase;
+            font-size: 16px;
+            display: block;
+            text-align: center;
+            margin-bottom: 7px;
+            font-weight: bold;
+        }
+        select {
+            width: 100%;
+            display: inline-block;
+            height: 36px;
+            text-indent: 7px;
+            background: #fff url(../images/other_page/icon-bullet-down-select-1.png) no-repeat right center;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            -webkit-box-shadow: 0px 1px 6px 0px rgba(150,147,150,1);
+            -moz-box-shadow: 0px 1px 6px 0px rgba(150,147,150,1);
+            box-shadow: 0px 1px 6px 0px rgba(150,147,150,1);
+            font-size: 14px;
+            font-family: "UTMAvo", Fallback, sans-serif;
+            color: #555555;
+        }
+    }
+}
+.tizi-gnn {
+    display: block;
+    text-align: center;
+    li {
+        display: block;
+        text-align: left;
+        margin:0 auto 8px auto;
+        position: relative;
+        max-width: 268px;
+        @include transition;
+        &:hover {
+            -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+             @include transition;
+        }
+        a {
+            display: block;
+            position: relative;
+        }
+        a img {
+            width: 100%;
+            max-width: 289px;
+        }
+        p {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: calc(100% - 30px);
+            font-family: "UTMAvo", Fallback, sans-serif;
+            color: #fff;
+            font-size: 18px;
+            padding:5px 15px;
+            background: rgba(0, 0, 0, .4);
+        }
+        &:first-child p {
+            color: #9ac039;
+        }
+    }
+}
+.tizi-content__right .more {
+    display: block;
+    text-align: center;
+    margin: 13px 0 20px 0;
+    a {
+        font-family: "UTMAvo", Fallback, sans-serif;
+        color: #3b93bb;
+        font-size: 16px;
+        text-decoration: underline;
+        &:hover {
+            color:#f69a04;
+        }
+    }
+}
+.tizi-tdg {
+    display: block;
+    text-align: left;
+    background: #fff;
+    padding: 15px 10px 15px 30px;
+    margin-bottom: 15px;
+    list-style-type: disc;
+    li {
+        width: 100%;
+        margin-bottom: 15px;
+
+        p {
+            color: #555555;
+            &:first-child {
+                color:#000;
+                font-weight: bold;
+                margin-bottom: 5px;
+                &:hover {
+                    @include transition;
+                    color:#9ac039;
+                }
+            }
+        }
+    }
+}
+/**/
+.tizi-list-tttd {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    margin: 0 auto;
+    li {
+        display: inline-block;
+        margin: 0 10px 7px 0;
+        width: 49%;
+        background: #fff;
+
+        &:nth-child(2n+2) {
+            margin-right: 0;
+        }
+        a {
+           padding: 10px;
+           display: block;
+            @include transition;
+        }
+        a:hover {
+            display: block;
+            -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+             @include transition;
+            .title {
+                color:#9ac039;
+            }
+        }
+        img {
+            float: left;
+            width: 105px;
+            height: 58px;
+            margin-right: 10px;
+        }
+        div {
+            display: block;
+            overflow: hidden;
+            text-align: left;
+
+            .title {
+                color: #000;
+                font-weight: bold;
+                font-size: 16px;
+                span {
+                    color: #555555;
+                    font-size: 13px;
+                    display: block;
+                    font-weight: normal;
+                    margin: -4px 0 5px 0;
+                }
+            }
+            p {
+                font-size: 13px;
+                .price {
+                    float: left;
+                    color:#f69a04;
+                    font-weight: bold;
+
+                }
+                .date {
+                    color: #555555;
+                    background: url(../images/other_page/icon-bullet-right-list.png) no-repeat left center;
+                    padding-left: 22px;
+                    display: inline-block;
+                    float: right;
+                }
+            }
+        }
+    }
+}
+.tizi_vlh {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    margin: 0 auto;
+    li {
+        display: inline-block;
+        margin: 0 0px 10px 0;
+        background: #fff;
+        width: 100%;
+        a {
+            display: block;
+            padding: 10px 10px 17px 10px;
+            @include transition;
+            &:hover {
+                webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+                box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+                @include transition;
+                .title span {
+                    color:#9ac039;
+                    @include transition;
+                }
+            }
+        }
+        img {
+            float: left;
+            width: 62px;
+            height: 63px;
+            margin-right: 40px;
+        }
+        div {
+            display: block;
+            overflow: hidden;
+            text-align: left;
+            margin-top: 10px;
+            .title {
+                color: #000;
+                font-weight: bold;
+                font-size: 16px;
+                float: left;
+                span {
+                    color: #000;
+                    strong {
+                        color: #555555;
+                        font-size: 13px;
+                        display: block;
+                        font-weight: normal;
+                    }
+                }
+            }
+            .info {
+                display: block;
+                overflow: hidden;
+                text-align: left;
+                float: right;
+                width: 245px;
+                span {
+                    display: inline-block;
+                    width: 100%;
+                    text-align: left;
+                    color: #000;
+                    strong {
+                        font-size: 13px;
+                        font-weight: normal;
+                    }
+                    .add {
+                        float: right;
+                        background: url(../images/other_page/icon-diadiem-black.png) no-repeat left center;
+                        padding-left: 17px;
+                        display: inline-block;
+                    }
+                    .date {
+                        background: url(../images/other_page/icon-bullet-right-list.png) no-repeat left center;
+                        padding-left: 22px;
+                        display: inline-block;
+                        float: left;
+                    }
+                }
+                .price {
+                    font-size: 16px;
+                    color: #f69a04;
+                    font-weight: bold;
+                    margin: 0 0 5px 0;
+                }
+            }
+        }
+    }
+}
+.img-quangcao {
+    width:100%;
+}
+.tizi-tvllc {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    margin: 0 auto;
+    li {
+        display: inline-block;
+        margin: 0 10px 7px 0;
+        width: 49%;
+        text-align: left;
+        background: #fff;
+        &:nth-child(2n+2) {
+            margin-right: 0;
+        }
+        a {
+            padding: 5px 10px;
+            display: block;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            transition: all 0.3s;
+            font-size: 13px;
+            display: block;
+            @include transition;
+            &:hover {
+                webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+                box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+                @include transition;
+            }
+            .price {
+                color: #f69a04;
+            }
+            .title {
+                color: #000;
+                font-weight: bold;
+                span {
+                    color: #555555;
+                    display: block;
+                    font-weight: normal;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+h2.xhtk {
+    color: #6e7175 !important;
+    font-weight: normal;
+}
 /**/
 .show-sp {
     display:none;
+}
+.toppage {
+    position: fixed;
+    bottom: 80px;
+    right: 70px;
+    &:hover {
+        webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+        @include transition;
+    }
 }

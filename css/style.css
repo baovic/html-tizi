@@ -138,7 +138,7 @@ body {
           padding: 3px 20px 6px 20px;
           font-family: "UTMAvo", Fallback, sans-serif;
           color: #fff;
-          font-size: 20px;
+          font-size: 18px;
           font-weight: bold;
           text-transform: uppercase;
           vertical-align: top;
@@ -433,6 +433,10 @@ body {
           padding: 0px 0 3px 10px;
           font-weight: bold;
           margin-bottom: 12px; }
+        .tizi-footer .tizi-footer__container .tizi-footer__navi .tizi-buy .cskh {
+          font-size: 13px;
+          color: #000;
+          font-weight: 600; }
         .tizi-footer .tizi-footer__container .tizi-footer__navi .tizi-buy ul {
           text-align: left; }
           .tizi-footer .tizi-footer__container .tizi-footer__navi .tizi-buy ul li {
@@ -666,9 +670,15 @@ body {
           display: block;
           padding: 0;
           font-size: 15px;
-          color: #555555; }
+          color: #555555;
+          -webkit-transition: all 0.3s;
+          -moz-transition: all 0.3s;
+          transition: all 0.3s; }
           .tizi-content .tizi-content__page .tizi-content__left .tizi-tktt li a:hover {
-            color: #f69a04; }
+            color: #f69a04;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            transition: all 0.3s; }
         .tizi-content .tizi-content__page .tizi-content__left .tizi-tktt li:nth-child(2n+1) {
           text-align: right; }
 .tizi-content .tizi-content__main {
@@ -708,6 +718,9 @@ body {
         position: absolute;
         left: 1px;
         top: 1px; }
+      .tizi-content .tizi-content__main .tizi-search form div .tcnn {
+        background: url(../images/other_page/icon-allnn.png) no-repeat left -4px;
+        width: 37px; }
       .tizi-content .tizi-content__main .tizi-search form div .diadiem {
         margin-left: 0;
         text-indent: 35px; }
@@ -743,7 +756,10 @@ body {
         font-size: 24px;
         text-align: center;
         padding: 0;
-        cursor: pointer; }
+        cursor: pointer;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s; }
         .tizi-content .tizi-content__main .tizi-content__main--left .list-tab li:nth-child(2) {
           margin: 0 0.5px; }
         .tizi-content .tizi-content__main .tizi-content__main--left .list-tab li:hover {
@@ -752,7 +768,10 @@ body {
           border-radius: 3px;
           -webkit-box-shadow: 1px 2px 2px 1px #969396;
           -moz-box-shadow: 1px 2px 2px 1px #969396;
-          box-shadow: 1px 2px 2px 1px #969396; }
+          box-shadow: 1px 2px 2px 1px #969396;
+          -webkit-transition: all 0.3s;
+          -moz-transition: all 0.3s;
+          transition: all 0.3s; }
           .tizi-content .tizi-content__main .tizi-content__main--left .list-tab li:hover a {
             border: none;
             height: auto;
@@ -842,7 +861,7 @@ body {
       color: #000;
       display: block;
       border: 1px solid #dcdcdc;
-      padding: 5px 10px 7px 10px;
+      padding: 5px 12px 7px 12px;
       background: #fff;
       font-weight: bold; }
       .paging li a:hover {
@@ -853,9 +872,313 @@ body {
       color: #fff; }
 
 /**/
+.timkiem-nangcao {
+  display: block; }
+  .timkiem-nangcao div {
+    display: block;
+    margin-top: 20px;
+    background: #dfe0e5;
+    padding: 5px 15px 10px 15px; }
+    .timkiem-nangcao div label {
+      text-transform: uppercase;
+      font-size: 16px;
+      display: block;
+      text-align: center;
+      margin-bottom: 7px;
+      font-weight: bold; }
+    .timkiem-nangcao div select {
+      width: 100%;
+      display: inline-block;
+      height: 36px;
+      text-indent: 7px;
+      background: #fff url(../images/other_page/icon-bullet-down-select-1.png) no-repeat right center;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      -webkit-box-shadow: 0px 1px 6px 0px #969396;
+      -moz-box-shadow: 0px 1px 6px 0px #969396;
+      box-shadow: 0px 1px 6px 0px #969396;
+      font-size: 14px;
+      font-family: "UTMAvo", Fallback, sans-serif;
+      color: #555555; }
+
+.tizi-gnn {
+  display: block;
+  text-align: center; }
+  .tizi-gnn li {
+    display: block;
+    text-align: left;
+    margin: 0 auto 8px auto;
+    position: relative;
+    max-width: 268px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s; }
+    .tizi-gnn li:hover {
+      -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s; }
+    .tizi-gnn li a {
+      display: block;
+      position: relative; }
+    .tizi-gnn li a img {
+      width: 100%;
+      max-width: 289px; }
+    .tizi-gnn li p {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: calc(100% - 30px);
+      font-family: "UTMAvo", Fallback, sans-serif;
+      color: #fff;
+      font-size: 18px;
+      padding: 5px 15px;
+      background: rgba(0, 0, 0, 0.4); }
+    .tizi-gnn li:first-child p {
+      color: #9ac039; }
+
+.tizi-content__right .more {
+  display: block;
+  text-align: center;
+  margin: 13px 0 20px 0; }
+  .tizi-content__right .more a {
+    font-family: "UTMAvo", Fallback, sans-serif;
+    color: #3b93bb;
+    font-size: 16px;
+    text-decoration: underline; }
+    .tizi-content__right .more a:hover {
+      color: #f69a04; }
+
+.tizi-tdg {
+  display: block;
+  text-align: left;
+  background: #fff;
+  padding: 15px 10px 15px 30px;
+  margin-bottom: 15px;
+  list-style-type: disc; }
+  .tizi-tdg li {
+    width: 100%;
+    margin-bottom: 15px; }
+    .tizi-tdg li p {
+      color: #555555; }
+      .tizi-tdg li p:first-child {
+        color: #000;
+        font-weight: bold;
+        margin-bottom: 5px; }
+        .tizi-tdg li p:first-child:hover {
+          -webkit-transition: all 0.3s;
+          -moz-transition: all 0.3s;
+          transition: all 0.3s;
+          color: #9ac039; }
+
+/**/
+.tizi-list-tttd {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  margin: 0 auto; }
+  .tizi-list-tttd li {
+    display: inline-block;
+    margin: 0 10px 7px 0;
+    width: 49%;
+    background: #fff; }
+    .tizi-list-tttd li:nth-child(2n+2) {
+      margin-right: 0; }
+    .tizi-list-tttd li a {
+      padding: 10px;
+      display: block;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s; }
+    .tizi-list-tttd li a:hover {
+      display: block;
+      -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s; }
+      .tizi-list-tttd li a:hover .title {
+        color: #9ac039; }
+    .tizi-list-tttd li img {
+      float: left;
+      width: 105px;
+      height: 58px;
+      margin-right: 10px; }
+    .tizi-list-tttd li div {
+      display: block;
+      overflow: hidden;
+      text-align: left; }
+      .tizi-list-tttd li div .title {
+        color: #000;
+        font-weight: bold;
+        font-size: 16px; }
+        .tizi-list-tttd li div .title span {
+          color: #555555;
+          font-size: 13px;
+          display: block;
+          font-weight: normal;
+          margin: -4px 0 5px 0; }
+      .tizi-list-tttd li div p {
+        font-size: 13px; }
+        .tizi-list-tttd li div p .price {
+          float: left;
+          color: #f69a04;
+          font-weight: bold; }
+        .tizi-list-tttd li div p .date {
+          color: #555555;
+          background: url(../images/other_page/icon-bullet-right-list.png) no-repeat left center;
+          padding-left: 22px;
+          display: inline-block;
+          float: right; }
+
+.tizi_vlh {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  margin: 0 auto; }
+  .tizi_vlh li {
+    display: inline-block;
+    margin: 0 0px 10px 0;
+    background: #fff;
+    width: 100%; }
+    .tizi_vlh li a {
+      display: block;
+      padding: 10px 10px 17px 10px;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s; }
+      .tizi_vlh li a:hover {
+        webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s; }
+        .tizi_vlh li a:hover .title span {
+          color: #9ac039;
+          -webkit-transition: all 0.3s;
+          -moz-transition: all 0.3s;
+          transition: all 0.3s; }
+    .tizi_vlh li img {
+      float: left;
+      width: 62px;
+      height: 63px;
+      margin-right: 40px; }
+    .tizi_vlh li div {
+      display: block;
+      overflow: hidden;
+      text-align: left;
+      margin-top: 10px; }
+      .tizi_vlh li div .title {
+        color: #000;
+        font-weight: bold;
+        font-size: 16px;
+        float: left; }
+        .tizi_vlh li div .title span {
+          color: #000; }
+          .tizi_vlh li div .title span strong {
+            color: #555555;
+            font-size: 13px;
+            display: block;
+            font-weight: normal; }
+      .tizi_vlh li div .info {
+        display: block;
+        overflow: hidden;
+        text-align: left;
+        float: right;
+        width: 245px; }
+        .tizi_vlh li div .info span {
+          display: inline-block;
+          width: 100%;
+          text-align: left;
+          color: #000; }
+          .tizi_vlh li div .info span strong {
+            font-size: 13px;
+            font-weight: normal; }
+          .tizi_vlh li div .info span .add {
+            float: right;
+            background: url(../images/other_page/icon-diadiem-black.png) no-repeat left center;
+            padding-left: 17px;
+            display: inline-block; }
+          .tizi_vlh li div .info span .date {
+            background: url(../images/other_page/icon-bullet-right-list.png) no-repeat left center;
+            padding-left: 22px;
+            display: inline-block;
+            float: left; }
+        .tizi_vlh li div .info .price {
+          font-size: 16px;
+          color: #f69a04;
+          font-weight: bold;
+          margin: 0 0 5px 0; }
+
+.img-quangcao {
+  width: 100%; }
+
+.tizi-tvllc {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  margin: 0 auto; }
+  .tizi-tvllc li {
+    display: inline-block;
+    margin: 0 10px 7px 0;
+    width: 49%;
+    text-align: left;
+    background: #fff; }
+    .tizi-tvllc li:nth-child(2n+2) {
+      margin-right: 0; }
+    .tizi-tvllc li a {
+      padding: 5px 10px;
+      display: block;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+      font-size: 13px;
+      display: block;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s; }
+      .tizi-tvllc li a:hover {
+        webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s; }
+      .tizi-tvllc li a .price {
+        color: #f69a04; }
+      .tizi-tvllc li a .title {
+        color: #000;
+        font-weight: bold; }
+        .tizi-tvllc li a .title span {
+          color: #555555;
+          display: block;
+          font-weight: normal;
+          text-transform: uppercase; }
+
+h2.xhtk {
+  color: #6e7175 !important;
+  font-weight: normal; }
+
 /**/
 .show-sp {
   display: none; }
+
+.toppage {
+  position: fixed;
+  bottom: 80px;
+  right: 70px; }
+  .toppage:hover {
+    webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s; }
 
 /*--css Mobile--*/
 @media screen and (max-width: 1429px) {
@@ -868,6 +1191,9 @@ body {
   .tizi_gycb li {
     width: 31.8%; } }
 @media screen and (max-width: 1293px) {
+  .tizi-list-tttd li, .tizi-tvllc li {
+    width: 48.8%; }
+
   .tizi-content .tizi-main .tizi-bg-list ul li,
   .tizi-content .tizi-main .tizi-bg-list ul li:nth-child(7n),
   .tizi-content .tizi-main .tizi-bg-list ul li:nth-child(14) {
@@ -898,10 +1224,8 @@ body {
         margin-left: 0;
         width: calc(100% - 170px); }
         .tizi-header .tizi-header__container .tizi-header__search .search {
-          -webkit-border-radius: 5px;
-          -moz-border-radius: 5px;
-          border-radius: 5px;
-          width: 100%; }
+          border-radius: 5px !important;
+          width: 100% !important; }
       .tizi-header .tizi-header__container .tizi-group-login {
         width: auto;
         margin-right: 5px; }
@@ -1125,7 +1449,39 @@ body {
     float: none;
     display: inline-block; }
 
+  .tizi-gnn li p {
+    width: 100%; }
+
+  .tizi-list-tttd {
+    text-align: center; }
+
+  .img-quangcao {
+    max-width: 272px; }
+
+  .tizi-list-tttd li, .tizi-tvllc li {
+    width: 48%; }
+
+  .tizi-tvllc {
+    text-align: center; }
+    .tizi-tvllc li {
+      margin-bottom: 10px; }
+
   /*end media*/ }
+@media screen and (max-width: 670px) {
+  .tizi-list-tttd li div p .date {
+    float: left; }
+
+  .tizi_vlh li img {
+    margin-right: 10px; } }
+@media screen and (max-width: 640px) {
+  .tizi-list-tttd li div p .date {
+    float: left; }
+
+  .tizi_vlh li div .info {
+    display: block;
+    overflow: inherit;
+    float: none;
+    width: 100%; } }
 @media screen and (max-width: 615px) {
   .tizi-content .tizi-main .tizi-main__list li {
     width: 31.9%; }
@@ -1142,6 +1498,13 @@ body {
     padding-left: 0; }
     .tizi_gycb li a {
       font-size: 14px; } }
+@media screen and (max-width: 515px) {
+  .tizi-list-tttd li {
+    width: 100%;
+    margin: 0 0 10px 0 !important; }
+
+  .tizi-list-tttd li div p .date {
+    float: right; } }
 @media screen and (max-width: 478px) {
   .tizi-footer__sp ul li {
     margin: 0 3%; } }
@@ -1165,10 +1528,25 @@ body {
   .tizi_gyhm li {
     width: 49%; }
 
+  .tizi-gnn li {
+    max-width: 100%; }
+    .tizi-gnn li img {
+      width: 100%; }
+
+  .tizi_vlh li div {
+    margin-top: 0; }
+
   /*end media*/ }
 @media screen and (max-width: 407px) {
   .tizi-footer__sp ul li {
     margin: 0 1.5%; } }
+@media screen and (max-width: 364px) {
+  .tizi-tvllc li {
+    width: 47%;
+    margin: 0 0px 4px 0; } }
+@media screen and (max-width: 375px) {
+  .tizi-content .tizi-content__main .tizi-content__main--left .list-tab li {
+    font-size: 14px; } }
 @media screen and (max-width: 355px) {
   .tizi-footer__sp ul li {
     margin: 0 0.5%; } }
