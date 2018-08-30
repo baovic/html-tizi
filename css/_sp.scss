@@ -91,6 +91,7 @@
 	/*---container---*/
 	.tizi_container {
 	    min-width: 320px;
+	    margin-bottom: 100px;
 	    .tizi-ad img {
 	    	width: 100%;
 	    	max-width: 100%;
@@ -169,6 +170,7 @@
 		display: inline-block !important;
 		width: 100%;
 		height: auto;
+		margin-bottom: 100px;
 	}
 		.xhtk {
 			font-size: 20px;
@@ -194,7 +196,13 @@
 	        }
 	    }
 	/*--footer---*/
+	.toppage {
+	    bottom: 100px;
+	    right: 16px;
+	}
 	.tizi-footer__sp {
+		position: fixed;
+		bottom: 0;
 		display: inline-block !important;
 		width: 100%;
 		text-align: center;

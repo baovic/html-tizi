@@ -1255,7 +1255,8 @@ h2.xhtk {
 
   /*---container---*/
   .tizi_container {
-    min-width: 320px; }
+    min-width: 320px;
+    margin-bottom: 100px; }
     .tizi_container .tizi-ad img {
       width: 100%;
       max-width: 100%;
@@ -1317,7 +1318,8 @@ h2.xhtk {
   .tizi_container_page {
     display: inline-block !important;
     width: 100%;
-    height: auto; }
+    height: auto;
+    margin-bottom: 100px; }
 
   .xhtk {
     font-size: 20px; }
@@ -1339,7 +1341,13 @@ h2.xhtk {
       height: auto; }
 
   /*--footer---*/
+  .toppage {
+    bottom: 100px;
+    right: 16px; }
+
   .tizi-footer__sp {
+    position: fixed;
+    bottom: 0;
     display: inline-block !important;
     width: 100%;
     text-align: center;
