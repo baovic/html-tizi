@@ -1164,6 +1164,165 @@ h2.xhtk {
   color: #6e7175 !important;
   font-weight: normal; }
 
+/*dangtin*/
+.dang-tin {
+  /**/ }
+  .dang-tin .tizi-content {
+    width: 100%;
+    /*progressbar*/
+    /*.progressbar li:last-child:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: #ddd;
+      top: 15px;
+      left: -50%;
+      z-index : -1;
+    }*/
+    /*.progressbar li.active:after {
+      background-color: green;
+    }
+    .progressbar li.active {
+      color: green;
+    }
+    .progressbar li.active:before {
+      border-color: green;
+    }*/
+    /*.progressbar li:last-child:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: #ddd;
+    }*/
+    /*.progressbar li.active + li:after {
+      background-color: green;
+    }*/
+    /**/ }
+    .dang-tin .tizi-content .progressbar {
+      display: block;
+      counter-reset: step; }
+    .dang-tin .tizi-content .progressbar li {
+      list-style: none;
+      display: inline-block;
+      width: 30.33%;
+      position: relative;
+      text-align: center;
+      cursor: pointer; }
+      .dang-tin .tizi-content .progressbar li span {
+        background: #9c9c9c;
+        border-radius: 15px;
+        width: 28px;
+        height: 28px;
+        display: inline-block;
+        color: #fff;
+        font-weight: bold;
+        font-size: 19px;
+        position: absolute;
+        right: 50%; }
+      .dang-tin .tizi-content .progressbar li a {
+        position: relative;
+        top: 27px;
+        color: #000; }
+    .dang-tin .tizi-content .progressbar li:before {
+      /*content: counter(step);
+      counter-increment: step;
+      width: 30px;
+      height: 30px;
+      line-height : 30px;
+      border: 1px solid #ddd;
+      border-radius: 100%;
+      display: block;
+      text-align: center;
+      margin: 0 auto 10px auto;
+      background-color: #fff;*/
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: #ddd;
+      top: 15px;
+      left: -50%;
+      z-index: -1; }
+    .dang-tin .tizi-content .progressbar li.active:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: green;
+      top: 15px;
+      left: -50%;
+      z-index: -1; }
+    .dang-tin .tizi-content .progressbar li:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: #ddd;
+      top: 15px;
+      right: -50%;
+      z-index: -1; }
+    .dang-tin .tizi-content .tizi-content__page .tizi-content__left .tizi-dmrv li {
+      font-size: 22px; }
+      .dang-tin .tizi-content .tizi-content__page .tizi-content__left .tizi-dmrv li a:hover {
+        color: #fff; }
+      .dang-tin .tizi-content .tizi-content__page .tizi-content__left .tizi-dmrv li:first-child:hover {
+        background: #31363d; }
+      .dang-tin .tizi-content .tizi-content__page .tizi-content__left .tizi-dmrv li:hover {
+        background: #52575c url(../images/dang_tin/icon-bullet-right.png) no-repeat right center; }
+      .dang-tin .tizi-content .tizi-content__page .tizi-content__left .tizi-dmrv li:nth-child(2) a {
+        background: url(../images/dang_tin/icon-1.png) no-repeat left center;
+        padding: 5px 0; }
+      .dang-tin .tizi-content .tizi-content__page .tizi-content__left .tizi-dmrv li:nth-child(3) a {
+        background: url(../images/dang_tin/icon-2.png) no-repeat left center;
+        padding: 5px 0; }
+      .dang-tin .tizi-content .tizi-content__page .tizi-content__left .tizi-dmrv li:nth-child(4) a {
+        background: url(../images/dang_tin/icon-3.png) no-repeat left center;
+        padding: 5px 0; }
+      .dang-tin .tizi-content .tizi-content__page .tizi-content__left .tizi-dmrv li:nth-child(5) a {
+        background: url(../images/dang_tin/icon-4.png) no-repeat left center;
+        padding: 5px 0; }
+      .dang-tin .tizi-content .tizi-content__page .tizi-content__left .tizi-dmrv li:nth-child(6) a {
+        background: url(../images/dang_tin/icon-5.png) no-repeat left center;
+        padding: 5px 0; }
+      .dang-tin .tizi-content .tizi-content__page .tizi-content__left .tizi-dmrv li:nth-child(7) a {
+        background: url(../images/dang_tin/icon-6.png) no-repeat left center;
+        padding: 5px 0; }
+      .dang-tin .tizi-content .tizi-content__page .tizi-content__left .tizi-dmrv li:nth-child(8) a {
+        background: url(../images/dang_tin/icon-7.png) no-repeat left center;
+        padding: 5px 0; }
+      .dang-tin .tizi-content .tizi-content__page .tizi-content__left .tizi-dmrv li:nth-child(9) a {
+        background: url(../images/dang_tin/icon-8.png) no-repeat left center;
+        padding: 5px 0; }
+      .dang-tin .tizi-content .tizi-content__page .tizi-content__left .tizi-dmrv li:nth-child(10) a {
+        background: url(../images/dang_tin/icon-9.png) no-repeat left center;
+        padding: 5px 0; }
+      .dang-tin .tizi-content .tizi-content__page .tizi-content__left .tizi-dmrv li:nth-child(11) a {
+        background: url(../images/dang_tin/icon-10.png) no-repeat left center;
+        padding: 5px 0; }
+      .dang-tin .tizi-content .tizi-content__page .tizi-content__left .tizi-dmrv li:nth-child(12) a {
+        background: url(../images/dang_tin/icon-11.png) no-repeat left center;
+        padding: 5px 0; }
+      .dang-tin .tizi-content .tizi-content__page .tizi-content__left .tizi-dmrv li:nth-child(13) a {
+        background: url(../images/dang_tin/icon-12.png) no-repeat left center;
+        padding: 5px 0; }
+      .dang-tin .tizi-content .tizi-content__page .tizi-content__left .tizi-dmrv li:nth-child(14) a {
+        background: url(../images/dang_tin/icon-13.png) no-repeat left center;
+        padding: 5px 0; }
+      .dang-tin .tizi-content .tizi-content__page .tizi-content__left .tizi-dmrv li:nth-child(15) a {
+        background: url(../images/dang_tin/icon-14.png) no-repeat left center;
+        padding: 5px 0; }
+      .dang-tin .tizi-content .tizi-content__page .tizi-content__left .tizi-dmrv li:nth-child(16) a {
+        background: url(../images/dang_tin/icon-15.png) no-repeat left center;
+        padding: 5px 0; }
+      .dang-tin .tizi-content .tizi-content__page .tizi-content__left .tizi-dmrv li:nth-child(17) a {
+        background: url(../images/dang_tin/icon-16.png) no-repeat left center;
+        padding: 5px 0; }
+      .dang-tin .tizi-content .tizi-content__page .tizi-content__left .tizi-dmrv li:nth-child(18) a {
+        background: url(../images/dang_tin/icon-17.png) no-repeat left center;
+        padding: 5px 0; }
+
 /**/
 .show-sp {
   display: none; }
