@@ -74,7 +74,8 @@
             <div class="tizi-content__page">
                 <!-- content__left -->
                 <div class="tizi-content__left">
-                    <img src="images/other_page/icon-cart.png" alt="placeholder+image" class="img-raovat">
+                    <img src="images/other_page/icon-cart.png" alt="placeholder+image" class="img-raovat show-pc">
+                    <p class="tizi-dmdtsp show-sp">DANH MỤC RAO VẶT</p>
                     <ul class="tizi-dmrv">
                         <li>DANH MỤC RAO VẶT</li>
                         <li><a href="#">Bất động sản</a></li>
@@ -442,6 +443,12 @@
             tabId = $(this).attr('id');
             $(".tizi-tab").hide();
             $("."+tabId).show();
+        });
+        // 
+        $(document).on('click', '.tizi-dmdtsp', function(){
+            $(".tizi-dmrv").slideToggle('slow', function() {
+                $('.tizi-dmdtsp').toggleClass('transtext', $(this).is(':visible'));
+              });
         });
     </script>
 </body>

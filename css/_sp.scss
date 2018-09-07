@@ -339,6 +339,46 @@
 			margin-bottom: 10px;
 		}
 	}
+	.tizi-dmdtsp {
+		width: 100%;
+		font-size: 22px;
+		color: #000;
+		text-align: left;
+		cursor: pointer;
+		margin-top: 20px;
+		&:before {
+            content: '';
+		    background: url(../images/dang_tin/icon-menudm.png) no-repeat left center;
+		    text-align: center;
+		    width: 40px;
+		    height: 34px;
+		    display: inline-block;
+		    margin-right: 10px;
+		    float: left;
+		}
+	}
+	.transtext {
+		color: transparent;
+		&:before { 
+			content: '';
+		    background: url(../images/dang_tin/icon-menudm-x.png) no-repeat left center;
+		}
+	}
+	.tizi-content .tizi-content__page .tizi-content__left .tizi-dmrv {
+		clear: both;
+		display: none;
+	}
+	.dang-tin .tizi-content .xhtk-ber,
+	.dang-tin .tizi-content .tizi-tdm {
+	    padding: 0;
+	    background: #9ac039;
+	    color: #fff;
+	    font-size: 16px;
+	    padding: 5px 0 7px 5px;
+	}
+	.tizi-list-raovat {
+		padding: 0 5px;
+	}
 /*end media*/
 }
 @media screen and (max-width: 670px) {
@@ -392,6 +432,26 @@
     		}
     	}
     }
+}
+@media screen and (max-width: 530px) {
+	.dang-tin .tizi-content .form-dangtin .block {
+		padding: 0 10px;
+		label, select, input, textarea, .block-upload, .block-child, .block-child div i {
+			float: none;
+			width: 100%;
+		}
+		select, input, textarea, .block-upload {
+			margin: 5px 0;
+		}
+		.block-child div input {
+			width: 80%;
+			margin-top: 5px;
+			margin-left: 20px;
+		}
+		.block-child div {
+			margin-top: 5px;
+		}
+	}
 }
 @media screen and (max-width: 515px) {
 	.tizi-list-tttd li {
@@ -464,6 +524,12 @@
 		}
 	}
 }
+@media screen and (max-width: 390px) {
+	.dang-tin .tizi-content .progressbar li {
+		width: auto;
+	}
+}
+
 @media screen and (max-width: 364px) {
 	.tizi-tvllc li {
 		width: 47%;

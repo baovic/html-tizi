@@ -1301,110 +1301,66 @@ h2.xhtk {
 }
 /*dangtin*/
 .dang-tin {
-    
     /**/
     .tizi-content {
         width: 100%;
-        /*progressbar*/
+
+        /*progressbar step*/
         .progressbar {
-           display: block;
-           counter-reset: step;
+            counter-reset: step;
+            margin: 15px 0 25px 0;
+
+            li {
+                  list-style: none;
+                  display: inline-block;
+                  width: 30.33%;
+                  position: relative;
+                  text-align: center;
+                  cursor: pointer;
+                a {
+                    color: #000;
+                    font-size: 13px;
+                }
+                &:before {
+                    content: counter(step);
+                    counter-increment: step;
+                    width: 30px;
+                    height: 30px;
+                    line-height : 27px;
+                    border: 1px solid #9c9c9c;
+                    border-radius: 100%;
+                    display: block;
+                    text-align: center;
+                    margin: 0 auto;
+                    background-color: #9c9c9c;
+                    color: #fff;
+                    font-size: 19px;
+                    font-weight: bold;
+                }
+                &:after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 1px;
+                    background-color: #9c9c9c;
+                    top: 15px;
+                    left: -50%;
+                    z-index : -1;
+                }
+                &:first-child:after {
+                    content: none;
+                }
+            }
+            li.active{
+                &:before {
+                  border-color: #f69a04;
+                  background-color: #f69a04;
+                }
+            }
+            li.active:after {
+                background-color: #f69a04;
+            }
         }
-        .progressbar li {
-          list-style: none;
-          display: inline-block;
-          width: 30.33%;
-          position: relative;
-          text-align: center;
-          cursor: pointer;
-          span {
-            background: #9c9c9c;
-            border-radius: 15px;
-            width: 28px;
-            height: 28px;
-            display: inline-block;
-            color: #fff;
-            font-weight: bold;
-            font-size: 19px;
-            position: absolute;
-            right: 50%;
-          }
-          a {
-            position: relative;
-            top: 27px;
-            color: #000;
-          }
-        }
-        .progressbar li:before {
-          /*content: counter(step);
-          counter-increment: step;
-          width: 30px;
-          height: 30px;
-          line-height : 30px;
-          border: 1px solid #ddd;
-          border-radius: 100%;
-          display: block;
-          text-align: center;
-          margin: 0 auto 10px auto;
-          background-color: #fff;*/
-          content: "";
-          position: absolute;
-          width: 100%;
-          height: 1px;
-          background-color: #ddd;
-          top: 15px;
-          left: -50%;
-          z-index : -1;
-        }
-        .progressbar li.active:before {
-          content: "";
-          position: absolute;
-          width: 100%;
-          height: 1px;
-          background-color: green;
-          top: 15px;
-          left: -50%;
-          z-index : -1;
-        }
-        .progressbar li:after {
-          content: "";
-          position: absolute;
-          width: 100%;
-          height: 1px;
-          background-color: #ddd;
-          top: 15px;
-          right: -50%;
-          z-index : -1;
-        }
-        /*.progressbar li:last-child:after {
-          content: "";
-          position: absolute;
-          width: 100%;
-          height: 1px;
-          background-color: #ddd;
-          top: 15px;
-          left: -50%;
-          z-index : -1;
-        }*/
-        /*.progressbar li.active:after {
-          background-color: green;
-        }
-        .progressbar li.active {
-          color: green;
-        }
-        .progressbar li.active:before {
-          border-color: green;
-        }*/
-        /*.progressbar li:last-child:before {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 1px;
-            background-color: #ddd;
-        }*/
-        /*.progressbar li.active + li:after {
-          background-color: green;
-        }*/
         /**/
         .tizi-content__page .tizi-content__left .tizi-dmrv li {
             font-size: 22px;
@@ -1423,6 +1379,220 @@ h2.xhtk {
                 &:nth-child(#{$i+1}) a {
                     background: url(../images/dang_tin/icon-#{$i}.png) no-repeat left center;
                     padding: 5px 0;
+                }
+            }
+        }
+        .tizi-remind {
+            display: block;
+            padding: 15px 10px;
+            text-align: left;
+            margin: 0 auto;
+            div {
+                background: #9ac039;
+                width: 80%;
+                text-align: center;
+                margin: 0 auto 10px auto;
+                a {
+                    color: #fff;
+                    text-transform: uppercase;
+                    font-size: 16px;
+                    display: block;
+                    padding: 7px 0;
+                }
+            }
+            p {
+                display: block;
+                color: #000;
+                a {
+                    color: #418fe4;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        .xhtk-ber {
+            text-transform: inherit;
+            margin-top: -7px;
+            font-size: 20px;
+            padding: 0;
+        }
+        /**/
+        .tizi-maps {
+            display: block;
+            iframe {
+                width: 100%;
+                height: 260px;
+            }
+        }
+        .tizi-tdm {
+            font-size: 19px;
+            display: block;
+            text-align: left;
+            margin: 30px 0 10px 0;
+            color: #000;
+        }
+        .tizi-list-raovat {
+            display: block;
+            li {
+                display: block;
+                text-align: justify;
+                margin-bottom: 40px;
+                font-size: 16px;
+                a {
+                    color: #000;
+                    span {
+                        color: #7fa02c;
+                        font-weight: bold;
+                    }
+                    p {
+                        display: block;
+                    }
+                }
+            }
+        }
+        /**/
+        .form-dangtin {
+            display: block;
+            margin: 20px 0;
+            .block {
+                display: block;
+                text-align: left;
+                margin-bottom: 15px;
+                label {
+                    float: left;
+                    width: 240px;
+                    font-size: 16px;
+                    color: #000;
+                    text-align: left;
+                    margin-top: 8px;
+                    span {
+                        color: #f69a04;
+
+                    }
+                }
+                %fuck {
+                    color: #red;
+                    margin: 5px 10px;
+                    border:1px solid #9c9c9c;
+                    overflow: hidden;
+                    display: block;
+                    height: 46px;
+                    color: #000;
+                    font-size: 16px;
+                    font-family: "UTMAvo", Fallback, sans-serif;
+                    text-indent: 15px;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                }
+                select {
+                    width: calc(100% - 240px);
+                    background: #fff url(../images/dang_tin/icon-bullet-down.png) no-repeat right 3px;
+                    @extend %fuck;
+                }
+                input {
+                    width: calc(100% - 242px);
+                    @extend %fuck;
+                }
+                .block-child {
+                    overflow: hidden;
+                    display: block;
+                    width: calc(100% - 240px);
+                    input {
+                        width: calc(100% - 2px);
+                        margin: 0;
+                    }
+                    div {
+                        display: block;
+                        margin-top: 15px;
+                        i {
+                            color: #7fa02c;
+                            float: left;
+                            margin-right: 18px;
+                            font-size: 19px;
+                            margin-top: 8px;
+                            span {
+                                color: #f69a04;
+                            }
+                        }
+                        input {
+                            width: calc(100% - 153px);
+                            border:1px solid #9c9c9c;
+                            overflow: hidden;
+                        }
+                    }
+                }
+                textarea {
+                    width: calc(100% - 246px);
+                    @extend %fuck;
+                    height:247px;
+                }
+                .block-upload {
+                    width: calc(100% - 262px);
+                    @extend %fuck;
+                    height: auto;
+                    min-height: 247px;
+                    text-align: center;
+                    padding: 10px;
+                    position: relative;
+                    p {
+                        &:first-child {
+                            color:#7fa02c;
+                            text-transform: uppercase;
+                            text-align: center;
+                            font-weight: bold;
+                        }
+                        &:last-child {
+                            color:#000;
+                            text-align: center;
+                        }
+                    }
+                    img {
+                        display: block;
+                        text-align: center;
+                        width: 156px;
+                        height: 156px;
+                        margin: 22px auto;
+                    }
+                    input {
+                        position: absolute;
+                        width: 153px;
+                        height: 153px;
+                        top: 17%;
+                        left: 35%;
+                        z-index: 1;
+                        opacity: 0;
+                        cursor: pointer;
+                    }
+                    ul {
+                        display: inline;
+                        text-align: center;
+                        li {
+                            display: inline-block;
+                            position: relative;
+                            text-align: center;
+                            height: 102px;
+                            img {
+                                width: 100px;
+                                height: 80px;
+                            }
+                            span {
+                                position: absolute;
+                                top: 11px;
+                                right: 38%;
+                                background: #f69a04;
+                                border-radius: 14px;
+                                color: #fff;
+                                width: 20px;
+                                height: 20px;
+                                margin: 0 auto;
+                                text-align: center;
+                                text-indent: initial;
+                                z-index: 2;
+                                font-size: 14px;
+                                cursor: pointer;
+                            }
+                        }
+                    }
                 }
             }
         }
